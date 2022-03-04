@@ -1,0 +1,331 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "tea_willow",
+    "copy-from": "tea",
+    "name": {
+      "str_sp": "柳树茶"
+    },
+    "container": "bottle_glass",
+    "healthy": -1,
+    "stim": 0,
+    "description": "柳树皮制成的苦茶，从古代就开始用作温和的止痛药了。",
+    "price": 1250,
+    "fun": -3,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "pkill1",
+          "duration": 90
+        }
+      ]
+    }
+  },
+  {
+    "id": "tar_oil",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str_sp": "松馏油"
+    },
+    "description": "柏油一种由桦树皮或松树制成的粘稠的流淌的柏油。在各种历史用途中，它也被用作防腐剂和收敛剂。",
+    "weight": "40 g",
+    "volume": "250 ml",
+    "material": [
+      "oil"
+    ],
+    "symbol": "~",
+    "color": "yellow",
+    "phase": "liquid",
+    "use_action": {
+      "type": "heal",
+      "disinfectant_power": 2,
+      "bleed": 2,
+      "bite": 0.8,
+      "move_cost": 100
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "oil_garlic",
+    "name": {
+      "str_sp": "大蒜油"
+    },
+    "weight": "25 g",
+    "color": "white",
+    "container": "bottle_glass",
+    "comestible_type": "MED",
+    "symbol": "~",
+    "quench": -8,
+    "healthy": 4,
+    "description": "大蒜提取物一种从大蒜中提取的味道很浓的提取物，传统上用来帮助抵抗感染，尤其在东欧。不像现代的强力抗生素那么强大，但总比什么都没有强。每12小时使用一次。",
+    "charges": 6,
+    "price": 1000,
+    "material": [
+      "garlic"
+    ],
+    "volume": "250 ml",
+    "phase": "liquid",
+    "fun": -8,
+    "use_action": "WEAK_ANTIBIOTIC",
+    "flags": [
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "garlic_roasted",
+    "copy-from": "garlic",
+    "name": {
+      "str_sp": "烤蒜"
+    },
+    "spoils_in": "180 days",
+    "quench": -1,
+    "description": "蒜瓣，稍加调味料和烘烤。",
+    "price": 800,
+    "material": [
+      "garlic"
+    ],
+    "fun": 1
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "bread_garlic",
+    "copy-from": "bread",
+    "name": {
+      "str_sp": "蒜蓉面包"
+    },
+    "calories": 105,
+    "quench": -2,
+    "description": "用大蒜和调味料烹制的面包。",
+    "price": 100,
+    "material": [
+      "wheat",
+      "garlic"
+    ],
+    "vitamins": [
+      [
+        "vitC",
+        6
+      ],
+      [
+        "calcium",
+        12
+      ],
+      [
+        "iron",
+        5
+      ]
+    ],
+    "charges": 3,
+    "fun": 3
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chili_pepper_roasted",
+    "copy-from": "chili_pepper",
+    "name": {
+      "str": "烤辣椒"
+    },
+    "description": "辛辣辣椒，稍加调味料和烘烤。",
+    "charges": 1,
+    "fun": 1
+  },
+  {
+    "id": "makeshift_poultice",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "简易膏药"
+    },
+    "description": "一种使用临时防腐剂的原始膏药，用一块布或皮包住。应用松散，它是为了防止感染，但仍然可以帮助阻止出血。",
+    "weight": "70 g",
+    "volume": "250 ml",
+    "price": 300,
+    "material": [
+      "veggy"
+    ],
+    "symbol": "!",
+    "color": "light_gray",
+    "charges": 3,
+    "stack_size": 9,
+    "use_action": {
+      "type": "heal",
+      "bandages_power": 3,
+      "bleed": 8,
+      "bite": 0.75,
+      "move_cost": 300
+    }
+  },
+  {
+    "id": "posca",
+    "copy-from": "fruit_wine",
+    "type": "COMESTIBLE",
+    "name": {
+      "str_sp": "波斯卡酒"
+    },
+    "description": "一种传统的罗马饮料，由廉价的、通常是酸的葡萄酒稀释而成，通常用香草和蜂蜜制成更可口。",
+    "weight": "230 g",
+    "charges": 1,
+    "healthy": 0,
+    "price": 250,
+    "container": "waterskin",
+    "vitamins": [
+      [
+        "vitA",
+        10
+      ],
+      [
+        "vitC",
+        6
+      ],
+      [
+        "calcium",
+        2
+      ],
+      [
+        "iron",
+        1
+      ]
+    ],
+    "calories": 60,
+    "quench": 40,
+    "stim": -1,
+    "fun": 3,
+    "addiction_potential": 1
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "porridge_cooked",
+    "copy-from": "wheat",
+    "name": {
+      "str_sp": "麦片粥"
+    },
+    "weight": "247 g",
+    "spoils_in": "10 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "description": "用小麦或大麦烹调而成的简单食物，平淡但有馅。",
+    "flags": [
+      "EATEN_HOT"
+    ],
+    "fun": -1
+  },
+  {
+    "id": "jerky_offal",
+    "copy-from": "jerky",
+    "type": "COMESTIBLE",
+    "name": {
+      "str_sp": "烤干杂碎"
+    },
+    "description": "咸味风干肉。闻起来有点像狗粮，但会持续很长时间。",
+    "fun": -2,
+    "healthy": -1,
+    "calories": 92,
+    "proportional": {
+      "price": 0.8
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "tree_bacon",
+    "looks_like": "bacon",
+    "name": {
+      "str_sp": "烤树皮"
+    },
+    "weight": "300 g",
+    "color": "brown",
+    "comestible_type": "FOOD",
+    "spoils_in": "360 days",
+    "symbol": ",",
+    "quench": -3,
+    "healthy": 1,
+    "calories": 240,
+    "description": "树培根，桦树或松树的内部树皮片，经过烘烤，使其不那么粘稠，更易食用。可以原样食用，也可以晒干磨成面粉。虽然通常被认为是一种生存的食物，但它相对可口。",
+    "price": 120,
+    "price_postapoc": 40,
+    "material": [
+      "dried_vegetable"
+    ],
+    "volume": "250 ml",
+    "//": "Not millable as it requires a bit more drying to make into flour, and there may be technical issues if allowed to process less calorie-dense material into flour.",
+    "flags": [
+      "EDIBLE_FROZEN",
+      "NUTRIENT_OVERRIDE"
+    ],
+    "vitamins": [
+      [
+        "vitC",
+        1
+      ],
+      [
+        "vitA",
+        3
+      ]
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "potted_meat",
+    "copy-from": "pemmican",
+    "name": {
+      "str_sp": "罐头肉"
+    },
+    "conditional_names": [
+      {
+        "type": "FLAG",
+        "condition": "CANNIBALISM",
+        "name": {
+          "str_sp": "potted person"
+        }
+      },
+      {
+        "type": "COMPONENT_ID",
+        "condition": "mutant",
+        "name": {
+          "str_sp": "potted freak"
+        }
+      }
+    ],
+    "weight": "155 g",
+    "container": "can_medium",
+    "calories": 452,
+    "charges": 2,
+    "description": "烹调好的肉，保存在黄油或融化的脂肪里，这是罐头出现之前的一种食品保存形式。也称为confit。味道浓郁且富含脂肪，可以保存很长时间。",
+    "price": "12 USD",
+    "price_postapoc": "4 USD",
+    "material": [
+      "flesh"
+    ],
+    "vitamins": [
+      [
+        "vitA",
+        7
+      ],
+      [
+        "vitC",
+        16
+      ],
+      [
+        "calcium",
+        2
+      ],
+      [
+        "iron",
+        69
+      ],
+      [
+        "vitB",
+        781
+      ]
+    ],
+    "fun": 1,
+    "extend": {
+      "flags": [
+        "EATEN_HOT"
+      ]
+    }
+  }
+]

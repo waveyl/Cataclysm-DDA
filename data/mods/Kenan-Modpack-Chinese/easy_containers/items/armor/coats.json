@@ -1,0 +1,587 @@
+[
+  {
+    "type": "ARMOR",
+    "id": "bunker_coat",
+    "copy-from": "bunker_coat",
+    "name": {
+      "str": "消防外套"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "7400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "coat_fur",
+    "copy-from": "coat_fur",
+    "name": {
+      "str": "毛皮大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "coat_fur_sf",
+    "copy-from": "coat_fur_sf",
+    "name": {
+      "str": "貂皮大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "coat_lab",
+    "copy-from": "coat_lab",
+    "name": {
+      "str": "实验室大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4100 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "coat_rain",
+    "copy-from": "coat_rain",
+    "name": {
+      "str": "雨衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "3000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "coat_winter",
+    "copy-from": "coat_winter",
+    "name": {
+      "str": "防寒大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4300 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "duster",
+    "copy-from": "duster",
+    "name": {
+      "str": "防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "duster_fur",
+    "copy-from": "duster_fur",
+    "name": {
+      "str": "毛皮防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "duster_leather",
+    "copy-from": "duster_leather",
+    "name": {
+      "str": "皮制防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "greatcoat",
+    "copy-from": "greatcoat",
+    "name": {
+      "str": "羊毛大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "5300 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "house_coat",
+    "copy-from": "house_coat",
+    "name": {
+      "str": "浴袍"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_army",
+    "copy-from": "jacket_army",
+    "name": {
+      "str_sp": "军装夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4800 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_army_modern",
+    "copy-from": "jacket_army_modern",
+    "name": {
+      "str_sp": "作战上衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2810 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_chef",
+    "copy-from": "jacket_chef",
+    "name": {
+      "str": "厨师夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_evac",
+    "copy-from": "jacket_evac",
+    "name": {
+      "str": "急救夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_flannel",
+    "copy-from": "jacket_flannel",
+    "name": {
+      "str": "法兰绒夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_jean",
+    "copy-from": "jacket_jean",
+    "name": {
+      "str": "牛仔夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_leather",
+    "copy-from": "jacket_leather",
+    "name": {
+      "str": "皮夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_leather_red",
+    "copy-from": "jacket_leather_red",
+    "name": {
+      "str": "赛车皮衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_light",
+    "copy-from": "jacket_light",
+    "name": {
+      "str": "轻型夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "jacket_windbreaker",
+    "copy-from": "jacket_windbreaker",
+    "name": {
+      "str": "冲锋衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2900 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "kimono",
+    "copy-from": "kimono",
+    "name": {
+      "str_sp": "和服"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "yukata",
+    "copy-from": "yukata",
+    "name": {
+      "str": "日式浴衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "leather_police_jacket",
+    "copy-from": "leather_police_jacket",
+    "name": {
+      "str": "皮警服"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "1400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "peacoat",
+    "copy-from": "peacoat",
+    "name": {
+      "str": "厚呢短大衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "robe",
+    "copy-from": "robe",
+    "name": {
+      "str": "长袍"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4800 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "ski_jacket",
+    "copy-from": "ski_jacket",
+    "name": {
+      "str": "滑雪衫"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "3600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_duster",
+    "copy-from": "sleeveless_duster",
+    "name": {
+      "str": "无袖防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_duster_fur",
+    "copy-from": "sleeveless_duster_fur",
+    "name": {
+      "str": "无袖毛皮防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_duster_leather",
+    "copy-from": "sleeveless_duster_leather",
+    "name": {
+      "str": "无袖皮制防尘风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6600 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_trenchcoat",
+    "copy-from": "sleeveless_trenchcoat",
+    "name": {
+      "str": "无袖风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_trenchcoat_fur",
+    "copy-from": "sleeveless_trenchcoat_fur",
+    "name": {
+      "str": "无袖毛皮风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sleeveless_trenchcoat_leather",
+    "copy-from": "sleeveless_trenchcoat_leather",
+    "name": {
+      "str": "无袖皮制风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "trenchcoat",
+    "copy-from": "trenchcoat",
+    "name": {
+      "str": "风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "trenchcoat_fur",
+    "copy-from": "trenchcoat_fur",
+    "name": {
+      "str": "毛皮风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "trenchcoat_leather",
+    "copy-from": "trenchcoat_leather",
+    "name": {
+      "str": "皮制风衣"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "6000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "tux",
+    "copy-from": "tux",
+    "name": {
+      "str": "燕尾礼服"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2200 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "waistcoat",
+    "copy-from": "waistcoat",
+    "name": {
+      "str": "西装背心"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2200 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "winter_jacket_army",
+    "copy-from": "winter_jacket_army",
+    "name": {
+      "str": "防寒军装夹克"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "4800 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

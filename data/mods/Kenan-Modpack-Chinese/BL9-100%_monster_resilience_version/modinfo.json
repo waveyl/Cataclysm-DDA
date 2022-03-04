@@ -1,0 +1,16 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "BL9_100monres",
+    "name": "<color_light_blue>BL9-100%-怪物耐性版</color>",
+    "description": "\n <color_yellow>巨大的科幻动作冒险扩展mod </color> \n\n <color_light_cyan>巨大的异国情调地点-受污染的中世纪城堡，巨大的废弃工业设施，秘密组织的军事化岛屿，茂盛和设防的生物群落，外星人的移动基地（15个定制结构，从巨大到巨大！）</color>223可恶和可怕的变异危险怪物、变种人、外星人、高级外星人</color>888<color_light_blue>新定制现代高科技武器（也包括弹道武器！）以及不同层次的盔甲。工件的层次（很多！）那就是强化技能，统计数据。深度知识系统以分散的英特尔形式出现，期刊</color> \n <color_light_blue>添加了地点、物品和怪物，其知识来源于Capcom制作的标志性常驻恶魔系列以及半衰期系列</color>",
+    "category": "content",
+    "authors": [
+      "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+    ],
+    "dependencies": [
+      "dda"
+    ],
+    "path": ""
+  }
+]

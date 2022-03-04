@@ -1,0 +1,38 @@
+[
+  {
+    "id": "manual_surv_com",
+    "copy-from": "book_martial",
+    "type": "GENERIC",
+    "name": {
+      "str": "幸存者格斗手册"
+    },
+    "description": "一本关于各种对幸存者们总结出来对非传统战斗模式的实用格斗教程手册。",
+    "book_data": {
+      "martial_art": "style_surv_com"
+    }
+  },
+  {
+    "id": "manual_biojutsu",
+    "copy-from": "book_martial",
+    "type": "GENERIC",
+    "name": {
+      "str": "仿生战斗手册"
+    },
+    "description": "一本非常冗长乏味的书，详细介绍了从生物学中学习仿生格斗招式的尝试和错误的总结，多少可能有点作用。",
+    "book_data": {
+      "martial_art": "style_biojutsu"
+    }
+  },
+  {
+    "id": "manual_mut_com",
+    "copy-from": "book_martial",
+    "type": "GENERIC",
+    "name": {
+      "str": "后人类战斗手册"
+    },
+    "description": "这是一本冗长乏味的日记，详细描述了一些不断变异和增强的幸存者的胡言乱语，以及他们为适应其非人道能力而开发的非正统作战技术。",
+    "book_data": {
+      "martial_art": "style_mut_com"
+    }
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "SECRO_FLESH_HIVEMIND_START_main",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_effect": "secro_flesh_isadjacent",
+      "yes": [
+        "全球全球",
+        "环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球环球",
+        "*抽搐"
+      ],
+      "no": "*与你相邻时才有用。"
+    },
+    "responses": [
+      {
+        "text": "在这里扎营。",
+        "topic": "SECRO_FLESH_HIVEMIND_START_base_no",
+        "condition": {
+          "and": [
+            {
+              "u_has_effect": "secro_flesh_isadjacent"
+            },
+            {
+              "not": {
+                "npc_at_om_location": "FACTION_CAMP_ANY"
+              }
+            },
+            {
+              "not": {
+                "npc_at_om_location": "FACTION_CAMP_START"
+              }
+            },
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_building_starter"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "text": "在这里扎营。",
+        "topic": "SECRO_FLESH_HIVEMIND_START_base_yes",
+        "condition": {
+          "and": [
+            {
+              "u_has_effect": "secro_flesh_isadjacent"
+            },
+            {
+              "not": {
+                "npc_at_om_location": "FACTION_CAMP_ANY"
+              }
+            },
+            {
+              "npc_at_om_location": "FACTION_CAMP_START"
+            },
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_building_starter"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "text": "[完成]建立营地。",
+        "topic": "SECRO_FLESH_HIVEMIND_START_base",
+        "condition": {
+          "and": [
+            {
+              "u_has_effect": "secro_flesh_isadjacent"
+            },
+            {
+              "not": {
+                "npc_at_om_location": "FACTION_CAMP_ANY"
+              }
+            },
+            {
+              "npc_at_om_location": "FACTION_CAMP_START"
+            },
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_building"
+              }
+            },
+            {
+              "npc_has_effect": "secro_flesh_building_starter"
+            }
+          ]
+        },
+        "effect": "start_camp"
+      },
+      {
+        "text": "[调试]建立营地",
+        "topic": "TALK_DONE",
+        "condition": {
+          "u_has_trait": "SECRONOM_FLESH_DEBUG"
+        },
+        "effect": [
+          "npc_die",
+          "start_camp",
+          {
+            "mapgen_update": "secro_fleshcamp_start",
+            "origin_npc": true
+          },
+          {
+            "u_add_effect": "secro_flesh_campestablished",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "别管了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_HIVEMIND_START_base_no",
+    "type": "talk_topic",
+    "dynamic_line": "*周围区域不适合生物有机重建。也许能在一个开放的位置（如野外）创建新的主巢心智。",
+    "responses": [
+      {
+        "text": "…",
+        "topic": "SECRO_FLESH_HIVEMIND_START_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_HIVEMIND_START_base_yes",
+    "type": "talk_topic",
+    "dynamic_line": "*把触手伸向四周。过了一会儿，主巢心智轻拍你，随着它张开嘴，你知道这个区域可以开始重建了。\n主巢心智需要1000块血肉，花费1个小时改造完成。",
+    "responses": [
+      {
+        "text": "[开始]*用血肉喂养主巢心智*",
+        "topic": "SECRO_FLESH_HIVEMIND_START_main",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh",
+            "count": 1000
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 1000
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 1000
+          },
+          {
+            "npc_add_effect": "secro_flesh_building",
+            "duration": 3600
+          },
+          {
+            "npc_add_effect": "secro_flesh_building_starter",
+            "duration": "PERMANENT"
+          },
+          {
+            "npc_lose_trait": "SECRONOM_FLESH_STARTER"
+          }
+        ]
+      },
+      {
+        "text": "稍后…",
+        "topic": "SECRO_FLESH_HIVEMIND_START_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_HIVEMIND_START_base",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_at_om_location": "FACTION_CAMP_ANY",
+      "yes": "*将触手埋入地下，然后开始移动到理想位置。它将周围的触手向内包裹形成圆形可再生的紧凑脉壁。",
+      "no": "*你一撤销营地的建立，它周围的卷须就立刻缩了起来。"
+    },
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_DONE",
+        "condition": {
+          "npc_at_om_location": "FACTION_CAMP_ANY"
+        },
+        "effect": [
+          "npc_die",
+          {
+            "mapgen_update": "secro_fleshcamp_start",
+            "origin_npc": true
+          },
+          {
+            "u_add_effect": "secro_flesh_campestablished",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "…",
+        "topic": "TALK_DONE",
+        "condition": {
+          "not": {
+            "npc_at_om_location": "FACTION_CAMP_ANY"
+          }
+        }
+      }
+    ]
+  }
+]

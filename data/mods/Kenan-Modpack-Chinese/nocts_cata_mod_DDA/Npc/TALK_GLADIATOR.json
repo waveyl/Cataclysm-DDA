@@ -1,0 +1,123 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_GLADIATOR",
+    "dynamic_line": {
+      "u_has_trait": "PROF_GLADIATOR",
+      "yes": [
+        "呃，警卫去哪了…",
+        "拿起武器，我们也许有机会逃出去。",
+        "现在不是时候，鲜肉。怎么了?",
+        "你确定我们有时间谈谈？这是怎么一回事？",
+        "我不知道发生了什么，但我们也许能离开这里。"
+      ],
+      "no": [
+        "我不知道你来这里是为了什么，但你的时机很好。",
+        "嘿你！请你一定要帮助我们…",
+        "你不是警卫，也不像他们所谓的客户。你来这里干什么？",
+        "嘿，你不是他们中的一员…你能帮助我们吗？",
+        "你必须带我们离开这里！"
+      ]
+    },
+    "responses": [
+      {
+        "text": "发生什么事？",
+        "topic": "TALK_GLADIATOR_SITUATION"
+      },
+      {
+        "text": "为什么其他人要攻击我们？",
+        "topic": "TALK_GLADIATOR_HOSTILE"
+      },
+      {
+        "text": "听从我的指挥，我会带大家离开这里。",
+        "condition": {
+          "u_has_trait": "PROF_GLADIATOR"
+        },
+        "switch": true,
+        "topic": "TALK_GLADIATOR_RECRUIT"
+      },
+      {
+        "text": "我会帮你离开这里的。",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_GLADIATOR_RECRUIT"
+      },
+      {
+        "text": "再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_GLADIATOR_SITUATION",
+    "dynamic_line": {
+      "u_has_trait": "PROF_GLADIATOR",
+      "yes": [
+        "卫兵把牢房设置为自己开锁后离开了。出事了，我们也许能逃脱。",
+        "他妈的暴动什么的，混蛋把两个牢房都打开了。如果我们不被其他人生吞活剥，我们也许能逃脱。",
+        "我不确定，但重要的是他们把其他动物也放了出来。"
+      ],
+      "no": [
+        "我们被困在这里几个月了，为了一群恶心的混蛋的娱乐而战斗。管理这个地方的守卫远程解锁了我们所有的牢房，并抛弃了我们。",
+        "我不知道。我们被困在这里太久了，但是如果我们能出去…也许你能帮助我们？",
+        "你是警察吗？拜托，他们已经把我们困在这里了。"
+      ]
+    },
+    "responses": [
+      {
+        "text": "我明白了……",
+        "topic": "TALK_GLADIATOR"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_GLADIATOR_HOSTILE",
+    "dynamic_line": {
+      "u_has_trait": "PROF_GLADIATOR",
+      "yes": [
+        "这就是为什么你应该庆幸自己是鲜肉。如果你活得足够长，他们会把你转移到红队，然后他们对你做的那些事会把你变成动物。",
+        "他们比动物好不到哪里去，毕竟他们对人做的那些坏事在足够的战斗中幸存了下来。",
+        "他们发动这些战斗，让一个细胞块与另一个细胞块对抗，最终那些突然发作的细胞块习惯于试图杀死任何不站在他们一边的人…"
+      ],
+      "no": [
+        "他们被囚禁了足够长的时间，已经习惯了做一只该死的比特犬。",
+        "他们是这场该死的死亡比赛中的另一支队伍，这些混蛋会为他们的娱乐表演。他们已经在这里呆了足够长的时间来真正地进入它…",
+        "他们进行这项血腥运动已经很久了，以至于我们中的一些人甚至记不起它的表面。"
+      ]
+    },
+    "responses": [
+      {
+        "text": "哦。",
+        "topic": "TALK_GLADIATOR"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_GLADIATOR_RECRUIT",
+    "dynamic_line": {
+      "u_has_trait": "PROF_GLADIATOR",
+      "yes": [
+        "好吧。让我们给红队最后的休息，看看我们能不能逃脱…",
+        "荣耀与死亡。",
+        "一定有办法离开这里。带路。",
+        "我很好。走吧。"
+      ],
+      "no": [
+        "谢谢！我会听从你的指挥。",
+        "好吧。小心红队的其他人。",
+        "任何地方都要比这好。领先！",
+        "你真的要带我离开这里？谢谢…"
+      ]
+    },
+    "responses": [
+      {
+        "text": "我们走吧！",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  }
+]

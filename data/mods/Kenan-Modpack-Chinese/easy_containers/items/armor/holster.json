@@ -1,0 +1,236 @@
+[
+  {
+    "type": "ARMOR",
+    "id": "back_holster",
+    "copy-from": "back_holster",
+    "name": {
+      "str": "枪套（背）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "9 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 150
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "baldric_holster",
+    "copy-from": "baldric_holster",
+    "name": {
+      "str": "枪套（肩）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "bootstrap",
+    "copy-from": "bootstrap",
+    "name": {
+      "str": "枪套（脚）"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "bow_sling",
+    "copy-from": "bow_sling",
+    "name": {
+      "str": "弓背带"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50,
+        "flag_restriction": [
+          "SHEATH_BOW"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "holster",
+    "copy-from": "holster",
+    "name": {
+      "str": "枪套（腰）"
+    },
+    "pocket_data": [
+      {
+        "magazine_well": "350 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "western_holster",
+    "copy-from": "western_holster",
+    "name": {
+      "str": "西部枪套"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "855 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 30
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": false,
+        "rigid": true,
+        "ammo_restriction": {
+          "32": 18,
+          "38": 18,
+          "40": 18,
+          "44": 18,
+          "45": 18,
+          "46": 18,
+          "57": 18,
+          "380": 18,
+          "454": 18,
+          "460": 18,
+          "500": 18,
+          "762x25": 18,
+          "357mag": 18,
+          "357sig": 18,
+          "38super": 18,
+          "10mm": 18,
+          "45colt": 18,
+          "9x18": 18,
+          "9mm": 18
+        },
+        "moves": 20,
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "sholster",
+    "copy-from": "sholster",
+    "name": {
+      "str": "快拔枪套"
+    },
+    "pocket_data": [
+      {
+        "magazine_well": "200 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "490 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 30
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "bholster",
+    "copy-from": "bholster",
+    "name": {
+      "str": "隐藏式枪套"
+    },
+    "pocket_data": [
+      {
+        "magazine_well": "150 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "400 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 210
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "XL_holster",
+    "copy-from": "XL_holster",
+    "name": {
+      "str": "枪套（XL）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 70
+      }
+    ]
+  }
+]

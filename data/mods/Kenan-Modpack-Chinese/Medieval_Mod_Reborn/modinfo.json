@@ -1,0 +1,16 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Medieval_Mod_Reborn",
+    "name": "中世纪扩展 重生",
+    "authors": [
+      "Chaosvolt"
+    ],
+    "description": "正式替换和扩展中世纪和历史内容mod，DDA版本。",
+    "version": "BN version, update 10/26/2021",
+    "category": "items",
+    "dependencies": [
+      "dda"
+    ]
+  }
+]

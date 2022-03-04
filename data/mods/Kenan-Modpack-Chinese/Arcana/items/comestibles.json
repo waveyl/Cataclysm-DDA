@@ -1,0 +1,558 @@
+[
+  {
+    "id": "numbness_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "黑色药水",
+      "str_pl": "黑色药水"
+    },
+    "description": "一种奇怪的黑色液体，闻起来像死亡本身。据称，这是创造长生不老药的第一步。喝这种饮料会很快恢复疼痛，但代价是暂时的懒散。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "//": "Uncommon but still producible, medical items generally shot up in value post-cataclysm.",
+    "price": "200 USD",
+    "price_postapoc": "40 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "dark_gray",
+    "charges": 2,
+    "healthy": -4,
+    "fun": -4,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你喝了药水，感到一种奇怪的麻木感蔓延到全身。",
+      "effects": [
+        {
+          "id": "potion_numbness",
+          "duration": 900
+        }
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "strength_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "白色药水",
+      "str_pl": "白色药水"
+    },
+    "description": "一种奇怪的白色液体，气味让你鼻子发痒。据说，这是创造长生不老药的第二步。喝这种酒会使身体强壮，但会有轻微的疼痛和其他副作用。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "300 USD",
+    "price_postapoc": "60 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "dark_gray",
+    "charges": 2,
+    "healthy": -2,
+    "fun": -2,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你喝下药水，感觉邪恶的力量在你的身体里蔓延。",
+      "effects": [
+        {
+          "id": "potion_strength",
+          "duration": 900
+        }
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "speed_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "黄色药水",
+      "str_pl": "黄色药水"
+    },
+    "description": "一种奇怪的黄色液体，有醉人的气味。据称，这是创造长生不老药的第三步。喝这个可以提高你的速度和敏捷，但这不是一个愉快的体验。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "400 USD",
+    "price_postapoc": "80 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "dark_gray",
+    "charges": 2,
+    "healthy": 2,
+    "fun": 2,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你喝了药水，感到一种僵硬感在你的身体里蔓延开来。",
+      "effects": [
+        {
+          "id": "potion_speed",
+          "duration": 900
+        }
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "healing_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "红色药水",
+      "str_pl": "红色药水"
+    },
+    "description": "一种奇怪的微红色液体，散发出甜味。生命的长生不老药，还是仅仅是一种模仿？喝下它可以治愈许多疾病，并治愈一些伤害。它可以治疗出血，防止感染或中毒，并清除包括真菌感染在内的一些疾病。然而，它不能治愈深度咬伤或孢子，除非它们成为全面感染。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "500 USD",
+    "price_postapoc": "100 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "light_red",
+    "charges": 2,
+    "healthy": 4,
+    "fun": 4,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你喝了药水，感觉到一股令人舒畅的温暖蔓延到全身。",
+      "effects": [
+        {
+          "id": "potion_healing",
+          "duration": 900
+        }
+      ],
+      "vitamins": [
+        [
+          "blood",
+          2500
+        ],
+        [
+          "redcells",
+          2500
+        ]
+      ],
+      "damage_over_time": [
+        {
+          "damage_type": "true",
+          "duration": "1 s",
+          "amount": -5,
+          "bodyparts": [
+            "torso",
+            "head",
+            "arm_l",
+            "leg_l",
+            "arm_r",
+            "leg_r"
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "arcana_mana_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "银色药剂",
+      "str_pl": "银色药剂"
+    },
+    "description": "这是一种奇怪的液体，看起来像水银，但密度要小一些，毒性也要小得多。喝下它会给你注入神奇的能量。对于使用法力施法的人来说非常有用，但对于仅限于消耗疲劳的魔法符号的人来说毫无价值。每剂\n\n将恢复600法力值。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "750 USD",
+    "price_postapoc": "750 cent",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "blue",
+    "charges": 2,
+    "healthy": 2,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_mana_potion",
+      "no_fail": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "red_black_vulnerary",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "drugs",
+    "//": "Technically carmine is purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+    "name": {
+      "str": "胭脂红",
+      "str_pl": "胭脂红"
+    },
+    "description": "浸在炼金术混合物中的一块块布，形成一种能提炼和集中其效果的膏药。它的愈合效果集中在单个肢体上，并且可以在感染伤口变得脓毒性之前清除它们。然而，它对更深层次的疾病失去了作用，只能延缓失血和孢子，同时提供一些止痛效果。",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "450 USD",
+    "price_postapoc": "90 USD",
+    "looks_like": "disinrag",
+    "symbol": "!",
+    "color": "red",
+    "charges": 4,
+    "stack_size": 9,
+    "use_action": {
+      "type": "heal",
+      "limb_power": 3,
+      "head_power": 3,
+      "torso_power": 3,
+      "limb_scaling": 2.7,
+      "head_scaling": 2.7,
+      "torso_scaling": 2.7,
+      "bleed": 30,
+      "bite": 0.95,
+      "move_cost": 200,
+      "effects": [
+        {
+          "id": "potion_vulnerary",
+          "duration": 300
+        }
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "yellow_white_incense",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "drugs",
+    "name": {
+      "str": "柠檬香",
+      "str_pl": "柠檬香"
+    },
+    "//": "Citrine isn't quite white-yellow either, but jasmine incense would imply the flower rather than the color.",
+    "description": "一种炼金术混合物，渗入木炭或树脂的可燃基底，产生一种特殊的香。使用它将使用户充满活力，其聚焦效果类似于最初用于制作它的药剂。它不会影响力量和速度，而是直接恢复体力和疲劳。它将恢复24点疲劳和6000点耐力。",
+    "weight": "550 g",
+    "volume": "250 ml",
+    "price": "350 USD",
+    "price_postapoc": "70 USD",
+    "looks_like": "charcoal",
+    "symbol": "!",
+    "color": "light_gray",
+    "charges": 2,
+    "stack_size": 9,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_incense",
+      "no_fail": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "dragonblood_mutagen",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": {
+      "str": "血相",
+      "str_pl": "血相"
+    },
+    "looks_like": "blood",
+    "description": "一种凝固的液体，有点像血，似乎有自己的生命在跳动。目前开发超凡生物的研究工作表明，它可以永久地改变身体和思想。然而，如果没有这种力量的原始来源，它走不了多远。",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "120 USD",
+    "price_postapoc": "30 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "symbol": "~",
+    "color": "red",
+    "healthy": -6,
+    "fun": -8,
+    "freezing_point": -10,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你喝了血雕像。",
+      "vitamins": [
+        [
+          "arcana_mutagen_dragonblood",
+          450,
+          550
+        ],
+        [
+          "mutagen",
+          125
+        ]
+      ]
+    },
+    "flags": [
+      "NO_INGEST",
+      "EATEN_COLD",
+      "NPC_SAFE",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "flame_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "other",
+    "name": {
+      "str": "火焰护身符"
+    },
+    "description": "一种粗糙的纸制护身符，上面有奇怪的图案，并涂有少量的祭品。它可以用来近距离献祭敌人，或者在你绝望的情况下迅速点燃一团更可控的火焰。",
+    "//": "Talismans are natural magic, rare to non-existent pre-cataclysm as they develop from survivors studying otherworldly phenomena and connecting it to familiar concepts.",
+    "price_postapoc": 300,
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [
+      "paper"
+    ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "charges": 1,
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_immolate",
+        "no_fail": true,
+        "level": 0
+      },
+      {
+        "type": "firestarter",
+        "moves": 5
+      }
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "NO_INGEST",
+      "FIRESTARTER",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "water_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "other",
+    "name": {
+      "str": "水系护身符"
+    },
+    "description": "一种粗糙的纸护身符，上面有奇怪的图案，上面涂有猎人的祭品。它可以用来治疗小伤口，同时对某些炼金术效果提供有限的抵抗力。",
+    "price_postapoc": 600,
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [
+      "paper"
+    ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "heal",
+      "limb_power": 5,
+      "head_power": 5,
+      "torso_power": 5,
+      "limb_scaling": 1,
+      "head_scaling": 1,
+      "torso_scaling": 1,
+      "bleed": 15,
+      "bite": 0.5,
+      "move_cost": 25,
+      "effects": [
+        {
+          "id": "talisman_warding",
+          "duration": 600
+        }
+      ]
+    },
+    "flags": [
+      "NO_SALVAGE",
+      "NO_INGEST",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "earth_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "other",
+    "name": {
+      "str": "大地护身符"
+    },
+    "description": "一种粗糙的纸制护身符，上面有奇怪的图案，并涂有特殊的祭品。使用它将召唤或改变出一个奇怪的土石方结构，在绝望的时候可以充当一个贫瘠的避难所。",
+    "price_postapoc": "12 USD",
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [
+      "paper"
+    ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "deploy_tent",
+      "radius": 2,
+      "broken_type": "candle_barrier_aftermath",
+      "wall": "f_spires_arcana",
+      "floor": "f_pozdol_arcana",
+      "floor_center": "f_altar_arcana",
+      "door_opened": "f_door_arcana_o",
+      "door_closed": "f_door_arcana_c"
+    },
+    "flags": [
+      "NO_SALVAGE",
+      "NO_INGEST",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "air_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "other",
+    "name": {
+      "str": "空气护身符"
+    },
+    "description": "一种印有奇怪图案的粗糙的纸质护身符，涂抹着一些纯洁祭品。如果附近的召唤怪物没有敌意的话，使用它可以给予他们保护能量，使他们免受大多数环境危害，除了火灾。它还可以治疗附近的盟友，并且将短暂的召唤变成亲密者直到他们消失。保护效果持续一天，只影响召唤怪物，而治疗效果影响所有盟友。",
+    "price_postapoc": "24 USD",
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [
+      "paper"
+    ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_pet",
+      "no_fail": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_SALVAGE",
+      "NO_INGEST",
+      "NUTRIENT_OVERRIDE"
+    ]
+  },
+  {
+    "id": "veilblade_mutagen_item",
+    "type": "COMESTIBLE",
+    "//": "This only exists because DDA did something to break mutagenic tools.",
+    "name": {
+      "str": "祭品"
+    },
+    "description": "一个微弱发光的维度能量微尘，像漂浮的雨滴一样旋转。消耗它来吸收与之相关的能量，并向与外界达成协议迈出永久性的一步…",
+    "comestible_type": "MED",
+    "category": "mutagen",
+    "volume": "15 ml",
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NO_INGEST",
+      "TRADER_AVOID",
+      "ZERO_WEIGHT"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你在仪式上吸收能量。",
+      "vitamins": [
+        [
+          "arcana_mutagen_veil",
+          900,
+          1100
+        ],
+        [
+          "mutagen",
+          125
+        ]
+      ]
+    }
+  },
+  {
+    "id": "draconic_heart_mutator_mutagen_item",
+    "type": "COMESTIBLE",
+    "//": "This only exists because DDA did something to break mutagenic tools.",
+    "name": {
+      "str": "龙血祭"
+    },
+    "description": "这是一个充满活力的血红色球体，含有奇怪的精华，漂浮着，移动着，好像里面有一种粘稠的液体。消耗它来改变身体，这是完成龙血圣礼的永久步骤。",
+    "comestible_type": "MED",
+    "category": "mutagen",
+    "volume": "15 ml",
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NO_INGEST",
+      "TRADER_AVOID",
+      "ZERO_WEIGHT"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "你吸收龙血供体中的能量。",
+      "vitamins": [
+        [
+          "arcana_mutagen_dragonblood",
+          900,
+          1100
+        ],
+        [
+          "mutagen",
+          125
+        ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "type": "faction",
+    "id": "commandeers",
+    "name": "指挥中心成员",
+    "likes_u": 20,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 30,
+    "power": 60,
+    "food_supply": 100000,
+    "wealth": 10000000,
+    "relations": {
+      "commandeers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "super_soldiers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "bio_weapons": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "old_guard": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "knows your voice": true
+      },
+      "hells_raiders": {
+        "kill on sight": true
+      }
+    },
+    "description": "指挥中心的人在寻求…某物的庇护。他们有情报和一些旧警卫的联系。"
+  },
+  {
+    "type": "faction",
+    "id": "super_soldiers",
+    "name": "超级战士",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 10,
+    "power": 100,
+    "food_supply": 40000,
+    "wealth": 1000,
+    "relations": {
+      "super_soldiers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "commandeers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "bio_weapons": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "old_guard": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "knows your voice": true
+      },
+      "hells_raiders": {
+        "kill on sight": true
+      }
+    },
+    "description": "在最初的大灾难中幸存下来的军队的一个支部。他们与指挥中心结盟，在这个新世界寻求领导权。"
+  },
+  {
+    "type": "faction",
+    "id": "preppers",
+    "name": "末日准备者",
+    "likes_u": 20,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 50,
+    "power": 100,
+    "food_supply": 500000,
+    "wealth": 10000000,
+    "relations": {
+      "preppers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "wasteland_scavengers": {
+        "watch your back": true,
+        "defends your space": true,
+        "knows your voice": true
+      }
+    },
+    "description": "生还者在大灾变的想法出现之前就已经做好了准备。他们拥有重建的手段。"
+  },
+  {
+    "type": "faction",
+    "id": "bio_weapons",
+    "name": "生物武器",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 10,
+    "power": 100,
+    "food_supply": 40000,
+    "wealth": 1000,
+    "relations": {
+      "bio_weapons": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "commandeers": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "super_soldiers": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "old_guard": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "knows your voice": true
+      },
+      "hells_raiders": {
+        "kill on sight": true
+      }
+    },
+    "description": "与大灾变有关的未知项目的创建。与指挥中心结盟，因为他们是他们的创造者。"
+  },
+  {
+    "type": "faction",
+    "id": "slave_fighter_allied",
+    "name": "奴隶斗士（蓝队）",
+    "likes_u": 40,
+    "respects_u": 70,
+    "known_by_u": false,
+    "size": 50,
+    "power": 100,
+    "food_supply": 0,
+    "wealth": 0,
+    "relations": {
+      "slave_fighter_allied": {
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "watch your back": true,
+        "guard your stuff": true,
+        "knows your voice": true
+      },
+      "slave_fighter": {
+        "kill on sight": true
+      }
+    },
+    "description": "一辈子都没见过的人，只不过是为了富人的娱乐而斗殴。大多数理智的俘虏和新的肉食最终都会加入蓝色的队伍，和僵硬的“磨合”的战斗人员进行较量。"
+  },
+  {
+    "type": "faction",
+    "id": "slave_fighter",
+    "name": "奴隶斗士（红队）",
+    "likes_u": -20,
+    "respects_u": -10,
+    "known_by_u": false,
+    "size": 50,
+    "power": 100,
+    "food_supply": 0,
+    "wealth": 0,
+    "relations": {
+      "slave_fighter": {
+        "watch your back": true
+      },
+      "your_followers": {
+        "kill on sight": true
+      },
+      "slave_fighter_allied": {
+        "kill on sight": true
+      }
+    },
+    "description": "一辈子都没见过的人，只不过是为了富人的娱乐而斗殴。他们毫无理由地认为这场大灾难不过是另一轮，几乎无法区分对方和对方。"
+  }
+]

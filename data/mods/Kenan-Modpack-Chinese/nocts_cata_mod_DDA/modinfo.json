@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Cata++",
+    "name": "Cataclysm++",
+    "authors": [
+      "Noctifer"
+    ],
+    "description": "《大灾变：黑暗的未来》的非官方扩展模式。\n\n巨大的mod jabberwock，为游戏添加了大量内容：新物品、建筑、场景、怪物等。它还对从配方到场景的许多内容进行了修改和添加替代方案。它还增加了一个伪故事和作品的传说。生物武器、超级士兵、征兵、奴隶战士和旧大陆预科生NPC派系加入世界。\n\n寻找生物武器，寻找战利品，击落新怪物，并投资新工艺物品的技能。",
+    "category": "content",
+    "dependencies": [
+      "dda"
+    ]
+  }
+]

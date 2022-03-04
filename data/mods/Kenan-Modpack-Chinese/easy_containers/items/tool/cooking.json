@@ -1,0 +1,472 @@
+[
+  {
+    "type": "TOOL",
+    "id": "carver_off",
+    "copy-from": "carver_off",
+    "name": {
+      "str": "电动切肉刀（关）",
+      "str_pl": "电动链锯（关）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "char_purifier",
+    "copy-from": "char_purifier",
+    "name": {
+      "str": "炭滤净水器"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "charcoal": 75
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "char_purifier_clay",
+    "copy-from": "char_purifier_clay",
+    "name": {
+      "str": "大型木炭净水器"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "charcoal": 300
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "char_smoker",
+    "copy-from": "char_smoker",
+    "name": {
+      "str": "便携式木炭烤架"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "charcoal": 375
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "charcoal_cooker",
+    "copy-from": "charcoal_cooker",
+    "name": {
+      "str": "木炭炉"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "charcoal": 50
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "clay_pot",
+    "copy-from": "clay_pot",
+    "name": {
+      "str": "陶锅"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "1000 kg",
+        "watertight": true,
+        "rigid": true,
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "clay_teapot",
+    "copy-from": "clay_teapot",
+    "name": {
+      "str": "陶茶壶"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "1000 kg",
+        "watertight": true,
+        "rigid": true,
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "coffeemaker",
+    "copy-from": "coffeemaker",
+    "name": {
+      "str": "咖啡机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "dehydrator",
+    "copy-from": "dehydrator",
+    "name": {
+      "str": "食物脱水机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "esbit_stove",
+    "copy-from": "esbit_stove",
+    "name": {
+      "str": "固态燃料块便携炉"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "esbit": 50
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "food_processor",
+    "copy-from": "food_processor",
+    "name": {
+      "str": "食物料理机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "gasoline_cooker",
+    "copy-from": "gasoline_cooker",
+    "name": {
+      "str": "汽油炉"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "gasoline": 500
+        },
+        "watertight": true,
+        "rigid": true,
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "hotplate",
+    "copy-from": "hotplate",
+    "name": {
+      "str": "轻便电炉"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "makeshift_sealer",
+    "copy-from": "makeshift_sealer",
+    "name": {
+      "str": "简易真空封口机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "mess_kit",
+    "copy-from": "mess_kit",
+    "name": {
+      "str": "野外餐具"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "mil_mess_kit",
+    "copy-from": "mil_mess_kit",
+    "name": {
+      "str": "军用野外炊具"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_plus_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "multi_cooker",
+    "copy-from": "multi_cooker",
+    "name": {
+      "str": "多功能厨师机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km",
+        "moves": 50
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "oil_cooker",
+    "copy-from": "oil_cooker",
+    "name": {
+      "str": "灯油炉"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "lamp_oil": 800
+        },
+        "watertight": true,
+        "rigid": true,
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "popcan_stove",
+    "copy-from": "popcan_stove",
+    "name": {
+      "str": "汽水罐炉具"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "conc_alcohol": 500
+        },
+        "watertight": true,
+        "rigid": true,
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "pressure_cooker",
+    "copy-from": "pressure_cooker",
+    "name": {
+      "str": "高压锅"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "1000 kg",
+        "watertight": true,
+        "rigid": true,
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "survivor_mess_kit",
+    "copy-from": "survivor_mess_kit",
+    "name": {
+      "str": "幸存者野外炊具"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "lamp_oil": 800
+        },
+        "watertight": true,
+        "rigid": true,
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "teapot",
+    "copy-from": "teapot",
+    "name": {
+      "str": "茶壶"
+    },
+    "pocket_data": [
+      {
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1000 kg",
+        "watertight": true,
+        "rigid": true,
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "vac_sealer",
+    "copy-from": "vac_sealer",
+    "name": {
+      "str": "真空封口机"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "water_purifier",
+    "copy-from": "water_purifier",
+    "name": {
+      "str": "净水器"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_LIGHT",
+          "BATTERY_ULTRA_LIGHT"
+        ],
+        "default_magazine": "light_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

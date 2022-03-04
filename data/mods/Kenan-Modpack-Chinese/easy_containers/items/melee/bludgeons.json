@@ -1,0 +1,65 @@
+[
+  {
+    "type": "TOOL",
+    "id": "l-stick",
+    "copy-from": "l-stick",
+    "name": {
+      "str": "光棒（关）",
+      "str_pl": "光棒（关）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_plus_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "shock_staff",
+    "copy-from": "shock_staff",
+    "name": {
+      "str": "电棍",
+      "str_pl": "电棍"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "shocktonfa_off",
+    "copy-from": "shocktonfa_off",
+    "name": {
+      "str": "战术拐（关）",
+      "str_pl": "战术拐（关）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [
+          "BATTERY_MEDIUM"
+        ],
+        "default_magazine": "medium_battery_cell",
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

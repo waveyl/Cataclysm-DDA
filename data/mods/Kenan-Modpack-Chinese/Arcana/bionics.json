@@ -1,0 +1,132 @@
+[
+  {
+    "id": "bio_electrothermal_arc_projector",
+    "type": "bionic",
+    "name": {
+      "str": "电热电弧投影仪"
+    },
+    "description": "在你的左臂上集成了一个装置，可以发射奇异的能量束，从一个目标弹到另一个目标，将其电击并置其于死地。",
+    "occupied_bodyparts": [
+      [
+        "arm_l",
+        4
+      ]
+    ],
+    "act_cost": "75 kJ",
+    "fake_weapon": "bio_electrothermal_arc_projector_gun",
+    "flags": [
+      "BIONIC_GUN",
+      "BIONIC_NPC_USABLE"
+    ]
+  },
+  {
+    "id": "bio_rift_focus_projector",
+    "type": "bionic",
+    "name": {
+      "str": "裂缝聚焦投影仪"
+    },
+    "description": "在你的左手中集成了一个能够在现实中制造小孔的装置，将它们聚焦成超自然能量束。相当强大，射程很好，但对机器人目标毫无用处，一些超凡的怪物也对其免疫。",
+    "occupied_bodyparts": [
+      [
+        "hand_l",
+        1
+      ]
+    ],
+    "act_cost": "60 kJ",
+    "fake_weapon": "bio_rift_focus_projector_gun",
+    "flags": [
+      "BIONIC_GUN",
+      "BIONIC_NPC_USABLE"
+    ]
+  },
+  {
+    "id": "bio_essence_surge_cell",
+    "type": "bionic",
+    "name": {
+      "str": "源质浪涌电池"
+    },
+    "description": "一个小型紧凑的反应堆，由奇异的工艺制造，可植入你的身体。消耗超凡的源质，以稳定的速度，高效率地发电。唯一的缺点是这种反常的能量十分稀有和珍贵。",
+    "occupied_bodyparts": [
+      [
+        "torso",
+        10
+      ]
+    ],
+    "fuel_options": [
+      "arcana_fuel_essence",
+      "arcana_fuel_essence_blood",
+      "arcana_fuel_essence_dull",
+      "arcana_fuel_essence_pure"
+    ],
+    "fuel_capacity": 100,
+    "fuel_efficiency": 1,
+    "time": 1,
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_POWER_SOURCE",
+      "BIONIC_NPC_USABLE"
+    ]
+  },
+  {
+    "id": "bio_temporal_stimulation",
+    "type": "bionic",
+    "name": {
+      "str": "时间刺激"
+    },
+    "description": "一个发射网络，激活时会在有限程度上扭曲时间，增加你的速度和耐力，以换取大大增加的饥饿、口渴和疲劳。",
+    "occupied_bodyparts": [
+      [
+        "torso",
+        8
+      ],
+      [
+        "arm_l",
+        3
+      ],
+      [
+        "arm_r",
+        3
+      ],
+      [
+        "leg_l",
+        4
+      ],
+      [
+        "leg_r",
+        4
+      ]
+    ],
+    "enchantments": [
+      "ENCH_CBM_TEMPORAL_STIMULATION"
+    ],
+    "flags": [
+      "BIONIC_TOGGLED"
+    ],
+    "act_cost": "1 kJ",
+    "react_cost": "1 kJ",
+    "time": 1
+  },
+  {
+    "id": "bio_life_sign_suppression",
+    "type": "bionic",
+    "name": {
+      "str": "生命体征抑制"
+    },
+    "description": "一种奇特的装置，当激活时会放射出破坏性的能量，制造一个裹尸布，使不死生物对你的存在视而不见。作为交换，它会使身体不断生病，再加上野生动物会感觉到有什么东西掉了…",
+    "occupied_bodyparts": [
+      [
+        "torso",
+        5
+      ]
+    ],
+    "enchantments": [
+      "ENCH_CBM_LIFE_SIGN_SUPPRESSION"
+    ],
+    "flags": [
+      "BIONIC_TOGGLED"
+    ],
+    "act_cost": "750 J",
+    "react_cost": "750 J",
+    "time": 1
+  }
+]

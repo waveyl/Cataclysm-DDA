@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gaiaschosen_samsara",
+    "type": "SPELL",
+    "spell_class": "GAIAS_CHOSEN",
+    "name": {
+      "str": "轮回"
+    },
+    "description": "你把你的线条系在世界的线条上，让你的肌肤焕然一新，仿佛重生了。",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "attack",
+    "effect_str": "cureall",
+    "shape": "blast",
+    "base_casting_time": 60000,
+    "base_energy_cost": 800,
+    "energy_source": "MANA",
+    "components": "spell_components_samsara",
+    "difficulty": 8,
+    "min_damage": -20,
+    "max_damage": -240,
+    "damage_increment": -4.5,
+    "max_level": 48,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "CONCENTRATE",
+      "LOUD"
+    ]
+  }
+]

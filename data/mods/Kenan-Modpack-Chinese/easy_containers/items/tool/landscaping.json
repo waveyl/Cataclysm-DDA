@@ -1,0 +1,23 @@
+[
+  {
+    "type": "TOOL",
+    "id": "trimmer_off",
+    "copy-from": "trimmer_off",
+    "name": {
+      "str": "树篱机（关）",
+      "str_pl": "树篱修剪器（关闭）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "watertight": true,
+        "ammo_restriction": {
+          "gasoline": 600
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

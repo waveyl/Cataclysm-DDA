@@ -1,0 +1,279 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "我真的希望徽章是属于你的…",
+      "no": "嘿，客人，有什么令人兴奋的事吗？"
+    },
+    "responses": [
+      {
+        "text": "徽章是怎么回事？上面说是生物武器？",
+        "topic": "TALK_BIO_2_U_BIO"
+      },
+      {
+        "text": "这里有点无聊吧？",
+        "topic": "TALK_BIO_2_BORING"
+      },
+      {
+        "text": "Router建议我和你谈谈加入追捕Apophis的行动。",
+        "topic": "TALK_BIO_2_APOPHIS",
+        "condition": {
+          "u_has_mission": "MISSION_PROOF_APOPHIS_DEAD"
+        }
+      },
+      {
+        "text": "你还好吗？路由器让我去看看你。",
+        "topic": "TALK_BIO_2_ROUTER",
+        "condition": {
+          "u_has_effect": "router_suggestion"
+        }
+      },
+      {
+        "text": "好的，再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_U_BIO",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "军事增援计划，和你戴的徽章是同一个人。如果你自己也有一个的话，我猜你对它了解得够多了。直到路由器找到我并把我带进去，我才记得太多，和西格玛一样。",
+      "no": "军事增援项目。不是那种生物武器如果你这么想的话，它不会传染。更像是活的武器。我猜你已经知道了一点，你已经在这里了。我没什么可说的，就在这里等着。"
+    },
+    "responses": [
+      {
+        "text": "看来我是同舟共济。",
+        "topic": "TALK_BIO_2_IAM_BIO",
+        "condition": {
+          "u_has_any_trait": [
+            "BIO_WEAPON_ALPHA",
+            "BIO_WEAPON_BETA",
+            "BIO_WEAPON_GAMMA",
+            "BIO_WEAPON_DELTA",
+            "BIO_WEAPON_FAILED"
+          ]
+        }
+      },
+      {
+        "text": "事实上，我是超级战士之一。",
+        "topic": "TALK_BIO_2_IAM_SOLDAT",
+        "condition": {
+          "u_has_trait": "SUPER_SOLDIER_MARKER"
+        }
+      },
+      {
+        "text": "我明白了……",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_IAM_BIO",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "我猜这就解释了你从哪里拿到徽章的。",
+      "no": "我不知道是否相信你，没有徽章。但不管怎样，不知道你是否失去了你的，或者你决定不做广告给大家看。考虑到那些混蛋从超级士兵到巨型猫科生物武器再到他妈的阿波菲斯，在这一点上没有什么能让我吃惊的。"
+    },
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_IAM_SOLDAT",
+    "dynamic_line": "我猜这能解释你来这里的原因。我们会看看你是否像其他两个幸存下来的人一样有用，或者你是否会像我一样无所事事。",
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_APOPHIS",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "是时候有人对那畜生采取行动了。很高兴参加战斗。带路！",
+      "no": "嘿。当然希望你知道你在做什么。引导…"
+    },
+    "responses": [
+      {
+        "text": "好的，出发吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_BORING",
+    "dynamic_line": {
+      "u_has_effect": "router_suggestion",
+      "yes": "告诉我吧。我是一种武器，用来杀人和毁灭。我被困在这里，没什么可杀可毁的。希望我能做点什么…",
+      "no": "告诉我吧。我是一种武器，用来杀人和毁灭。我被困在这里，躲着一些我不能杀死或摧毁的东西。希望我能做点什么…"
+    },
+    "responses": [
+      {
+        "text": "一定很难…",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_ROUTER",
+    "dynamic_line": "我很感激你的想法，但没什么好说的。事情是稳定的，至少，如果有点无聊。我想找到一些方法来充分利用我的技能，但我不知道该怎么做。",
+    "responses": [
+      {
+        "text": "我们是生物武器。我们注定要在那里，踢屁股，取名字，拯救世界。为什么不一起去做呢？",
+        "topic": "TALK_BIO_2_RECRUIT_BIO",
+        "condition": {
+          "u_has_any_trait": [
+            "BIO_WEAPON_ALPHA",
+            "BIO_WEAPON_BETA",
+            "BIO_WEAPON_GAMMA",
+            "BIO_WEAPON_DELTA"
+          ]
+        }
+      },
+      {
+        "text": "我找到了一个目标，不管是不是仿生拒绝。什么都不做…如果你想做的话？",
+        "topic": "TALK_BIO_2_RECRUIT_FAILED",
+        "condition": {
+          "u_has_any_trait": [
+            "BIO_WEAPON_FAILED"
+          ]
+        }
+      },
+      {
+        "text": "你是最早的模特之一。我不介意你加入球队。",
+        "topic": "TALK_BIO_2_RECRUIT_SOLDIER",
+        "condition": {
+          "u_has_any_trait": [
+            "SUPER_SOLDIER_MARKER"
+          ]
+        }
+      },
+      {
+        "text": "为什么不加入我？",
+        "condition": {
+          "not": {
+            "u_has_effect": "lambda_asked_recently"
+          }
+        },
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 2
+        },
+        "success": {
+          "topic": "TALK_BIO_2_RECRUIT_SUCCESS"
+        },
+        "failure": {
+          "topic": "TALK_BIO_2_RECRUIT_FAILURE",
+          "effect": {
+            "u_add_effect": "lambda_asked_recently",
+            "duration": 1800
+          }
+        }
+      },
+      {
+        "text": "为什么不加入我？",
+        "condition": {
+          "u_has_effect": "lambda_asked_recently"
+        },
+        "topic": "TALK_BIO_2_RECRUIT_DELAY"
+      },
+      {
+        "text": "我懂了。",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_BIO",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "那是他妈的精神！你让我想去那里拯救世界或者像那样的无稽之谈。你有个交易。",
+      "no": "这些话你不是随便从一个朋克那里听到的。让我觉得这个星球还没有完全绕着下水道转。去他妈的，为什么不呢？如果你准备好了，我就准备好了。"
+    },
+    "responses": [
+      {
+        "text": "一起走吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_FAILED",
+    "dynamic_line": {
+      "u_is_wearing": "badge_bio_weapon",
+      "yes": "嘿，你不必为此自责。也不要给我小狗的眼睛。我不介意找点有建设性的事做…等你准备好了，我想。",
+      "no": "我猜你也是生化武器。徽章与否，拒绝与否。别为这事自责。我想你是建议我跟着你，说实话我也可以。带路。"
+    },
+    "responses": [
+      {
+        "text": "一起走吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_SOLDIER",
+    "dynamic_line": "原始型号？我不知道我该不该把那当作恭维。我想总比什么都不做在这里浪费时间好。准备好了。",
+    "responses": [
+      {
+        "text": "一起走吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_SUCCESS",
+    "dynamic_line": "你真有胆量，建议我只是无聊地跟着你。至少你看起来很有能力，所以为什么不…继续！",
+    "responses": [
+      {
+        "text": "一起走吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_FAILURE",
+    "dynamic_line": "是的，我不这么认为。",
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIO_2_RECRUIT_DELAY",
+    "dynamic_line": "你刚才问我的。",
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_BIO_2"
+      }
+    ]
+  }
+]

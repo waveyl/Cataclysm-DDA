@@ -1,0 +1,62 @@
+[
+  {
+    "type": "MAGAZINE",
+    "id": "38_speedloader",
+    "copy-from": "38_speedloader",
+    "name": {
+      "str": "7发快速装弹器 （.38/.357）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "38": 7,
+          "357mag": 7
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "MAGAZINE",
+    "id": "38_speedloader5",
+    "copy-from": "38_speedloader5",
+    "name": {
+      "str": "5发快速装弹器 （.38/.357）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "38": 5,
+          "357mag": 5
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "MAGAZINE",
+    "id": "38_speedloader6",
+    "copy-from": "38_speedloader6",
+    "name": {
+      "str": "6发快速装弹器 （.38/.357）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "38": 6,
+          "357mag": 6
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

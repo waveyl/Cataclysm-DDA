@@ -1,0 +1,4607 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_library",
+    "name": "BL9图书馆",
+    "copy-from": "generic_city_building",
+    "color": "i_light_blue",
+    "extend": {
+      "flags": [
+        "SOURCE_BOOKS",
+        "SOURCE_LUXURY"
+      ]
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_library_roof",
+    "name": "BL9图书馆屋顶",
+    "copy-from": "generic_city_building",
+    "color": "i_light_blue"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_bookstore",
+    "copy-from": "generic_city_building",
+    "name": "BL9书店",
+    "color": "i_light_blue",
+    "extend": {
+      "flags": [
+        "SOURCE_BOOKS"
+      ]
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_bookstore_roof",
+    "copy-from": "generic_city_building",
+    "name": "BL9书店屋顶",
+    "color": "i_light_blue"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_entr1_left",
+    "name": "Castlelan1-入口",
+    "sym": "E",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_entr2_left",
+    "name": "卡斯特兰2 -入口",
+    "sym": "E",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_entr_right",
+    "name": "卡斯特兰3 -入口",
+    "sym": "E",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_entr_veryright",
+    "name": "Castlelan4-入口",
+    "sym": "E",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_ins_south",
+    "name": "卡斯特兰5 -内部房间",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_hall_west",
+    "name": "Castlelan6-中央大厅",
+    "sym": "H",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_clawer_south",
+    "name": "卡斯特兰7 -克劳沃监狱",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_cerem_east1",
+    "name": "Castlelan8-仪式室",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_cerem_east2",
+    "name": "卡斯特兰9 -礼仪室",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_ambush_east1",
+    "name": "卡斯特兰10 -伏击",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_ambush_east2",
+    "name": "Castlelan11-埋伏",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_purple1",
+    "name": "卡斯特兰紫色房间1",
+    "sym": "P",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_purple2",
+    "name": "卡斯特兰紫色房间2",
+    "sym": "P",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_purple3",
+    "name": "卡斯特兰紫色房间3",
+    "sym": "P",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_purple4",
+    "name": "卡斯特兰紫色房间4",
+    "sym": "P",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_prison",
+    "name": "Castlelan12-地下监狱",
+    "sym": "P",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_garden_south1",
+    "name": "卡斯特兰13号-花园",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_red1",
+    "name": "卡斯特兰红色房间1",
+    "sym": "R",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_red2",
+    "name": "卡斯特兰红楼2",
+    "sym": "R",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_red3",
+    "name": "卡斯特兰红色房间3",
+    "sym": "R",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_red4",
+    "name": "卡斯特兰红色房间4",
+    "sym": "R",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_garden_south2",
+    "name": "Castlelan14-花园",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_clawer_south2",
+    "name": "卡斯特兰15层客房",
+    "sym": "C",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_ambush_east3",
+    "name": "卡斯特兰16 -伏击",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_lava",
+    "name": "Castlelan17-地狱房间",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_roadtothrone_west1",
+    "name": "卡斯特兰18号-王位之路",
+    "sym": "T",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_roadtothrone_west2",
+    "name": "卡斯特莱兰19号-王座之路",
+    "sym": "T",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_green1",
+    "name": "卡斯特兰绿色房间1",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_green2",
+    "name": "卡斯特兰绿色房间2",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_green3",
+    "name": "卡斯特兰绿屋3",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_green4",
+    "name": "卡斯特兰绿色房间4",
+    "sym": "G",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_south1",
+    "name": "卡斯特兰20 -阴影履带塔",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_east1",
+    "name": "Castlelan21-影子爬虫塔",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_roadtothrone_bridge1",
+    "name": "卡斯特兰22号桥",
+    "sym": "B",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_roadtothrone_bridge2",
+    "name": "卡斯特兰23号桥",
+    "sym": "B",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_blue1",
+    "name": "卡斯特兰蓝色房间1",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_blue2",
+    "name": "卡斯特兰蓝色房间2",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_blue3",
+    "name": "卡斯特兰蓝色房间3",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_blue4",
+    "name": "卡斯特兰蓝色房间4",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_throneroom_west",
+    "name": "Castlelan24-投掷室",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_falling",
+    "name": "卡斯特兰25 -坠落",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_hivecaves_guardtower1",
+    "name": "蜂巢洞-守卫塔",
+    "sym": "T",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_hivecaves_guardtower2",
+    "name": "蜂巢洞-守卫塔",
+    "sym": "T",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_hivecaves_guardtower3",
+    "name": "蜂巢洞-守卫塔",
+    "sym": "T",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_hivecaves_guardtower4",
+    "name": "蜂巢洞-守卫塔",
+    "sym": "T",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_hivecaves_guardtower5",
+    "name": "蜂巢洞-守卫塔",
+    "sym": "T",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves1",
+    "name": "蜂巢洞穴1",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves2",
+    "name": "蜂巢洞穴2",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves3",
+    "name": "蜂巢洞3",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves1_castle",
+    "name": "蜂巢洞穴1 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves2_castle",
+    "name": "蜂巢洞穴2 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves3_castle",
+    "name": "蜂巢洞穴3-城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves4",
+    "name": "蜂巢洞穴4",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves5",
+    "name": "蜂巢洞穴5",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves6",
+    "name": "蜂巢洞穴6",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves4_castle",
+    "name": "蜂巢洞穴4 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves5_castle",
+    "name": "蜂巢洞穴5 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves6_castle",
+    "name": "蜂巢洞穴6-城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves7",
+    "name": "蜂巢洞穴7",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves8",
+    "name": "蜂巢洞穴8",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves7_castle",
+    "name": "蜂巢洞穴7 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves8_castle",
+    "name": "蜂巢洞穴8 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves9",
+    "name": "蜂巢洞穴9",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_caves9_castle",
+    "name": "蜂巢洞穴9 -城堡",
+    "sym": "H",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_assassin",
+    "name": "Castlelan26-地下下水道",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_mines1",
+    "name": "卡斯特兰27 -矿山",
+    "sym": "M",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_mines2",
+    "name": "卡斯特兰28 -矿山",
+    "sym": "M",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_furnace",
+    "name": "Castlelan29-熔炉",
+    "sym": "F",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_south2",
+    "name": "卡斯特兰30 -暗影爬虫巢穴",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_east2",
+    "name": "Castlelan31-影子爬虫巢穴",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_south3",
+    "name": "卡斯特兰32 -暗影爬虫巢穴",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_scrawler_west1",
+    "name": "Castlelan33-暗影爬虫巢穴",
+    "sym": "S",
+    "color": "pink",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_ruins",
+    "name": "卡斯特兰34号——地下遗迹",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_rail1",
+    "name": "Castlelan35-地下铁路",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_rail2",
+    "name": "卡斯特兰36 -地下铁路",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_outside1",
+    "name": "Castlelan37-外部",
+    "sym": "O",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_sandcaves_guardtower1",
+    "name": "地下废墟洞穴-守卫塔",
+    "sym": "T",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_sandcaves_guardtower2",
+    "name": "地下废墟洞穴-守卫塔",
+    "sym": "T",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_sandcaves_guardtower3",
+    "name": "地下废墟洞穴-守卫塔",
+    "sym": "T",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_sandcaves_guardtower4",
+    "name": "地下废墟洞穴-守卫塔",
+    "sym": "T",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_sandcaves_guardtower5",
+    "name": "地下废墟洞穴-守卫塔",
+    "sym": "T",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves1",
+    "name": "地下废墟1",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves1_castle",
+    "name": "地下规则1 -城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves2",
+    "name": "地下废墟2",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves3",
+    "name": "地下规则3",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves2_castle",
+    "name": "地下废墟2-城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves3_castle",
+    "name": "地下规则3 -城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves4",
+    "name": "地下规则4",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves5",
+    "name": "地下废墟5",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves6",
+    "name": "地下规则6",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves4_castle",
+    "name": "地下废墟4-城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves5_castle",
+    "name": "地下规则5 -城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves6_castle",
+    "name": "地下废墟6-城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves7",
+    "name": "地下废墟7",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves8",
+    "name": "地下规则8",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves7_castle",
+    "name": "地下规则7 -城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves8_castle",
+    "name": "地下废墟8-城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves9",
+    "name": "地下规则9",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sandruins_caves9_castle",
+    "name": "地下规则9 -城堡",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_robocastlelan1_south",
+    "name": "Castlelan38-路到桥",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_robocastlelan2_south",
+    "name": "卡斯特兰39桥",
+    "sym": "B",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_roadtocastlelan",
+    "name": "Castlelan40-上升",
+    "sym": "R",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "castlelan_castle_castlelan",
+    "name": "卡斯特兰41 -卡斯特兰遭遇",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_storage1",
+    "name": "BL9 Base1-入口",
+    "sym": "E",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_storage2",
+    "name": "BL9地下室2 -储藏室",
+    "sym": "S",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_storage3",
+    "name": "BL9 Base3-储藏室",
+    "sym": "S",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_factory1",
+    "name": "BL9 Base4 -工厂",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_factory2",
+    "name": "BL9 Base5 -工厂",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_factory3",
+    "name": "BL9 Base6-工厂",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_core1",
+    "name": "BL9 Base7 -核心",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_core2",
+    "name": "BL9 Base8-核心",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_core2_island",
+    "name": "BL9 Base8核心岛",
+    "sym": "I",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_core3",
+    "name": "BL9 Base9 -核心",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_medresearch1",
+    "name": "BL9 Base10-医学研究设施",
+    "sym": "M",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_medresearch2",
+    "name": "BL9 Base11 -医学研究机构",
+    "sym": "M",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_medresearch3",
+    "name": "BL9 Base12-医学研究设施",
+    "sym": "M",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_controlroom1",
+    "name": "BL9地下室13 -控制室",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_controlroom2",
+    "name": "BL9 Base14-控制室",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_controlroom3",
+    "name": "BL9地下室15 -控制室",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_hangar1",
+    "name": "BL9基底16 -机库",
+    "sym": "H",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_hangar2",
+    "name": "BL9 Base17-机库",
+    "sym": "H",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "island_base_hangar3",
+    "name": "BL9基底18 -机库",
+    "sym": "H",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Entrance1",
+    "name": "BL9岛1 -入口",
+    "sym": "E",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Entrance2",
+    "name": "BL9 Island2-入口",
+    "sym": "E",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Entrance3",
+    "name": "BL9岛3 -入口",
+    "sym": "E",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_davran1",
+    "name": "Davranides的BL9域",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_davran2",
+    "name": "Davranides的BL9域",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_davran3",
+    "name": "Davranides的BL9域",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_davran4",
+    "name": "Davranides的BL9域",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran1",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran2",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran3",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran4",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran5",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran6",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran7",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran8",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_davran9",
+    "name": "BL9达夫拉尼德斯的移动基地",
+    "sym": "D",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_watercaves_guardtower2",
+    "name": "沉洞-守卫塔",
+    "sym": "T",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_watercaves_guardtower3",
+    "name": "沉洞-守卫塔",
+    "sym": "T",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_watercaves_guardtower4",
+    "name": "沉洞-守卫塔",
+    "sym": "T",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_watercaves_guardtower5",
+    "name": "沉洞-守卫塔",
+    "sym": "T",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_watercaves_guardtower1",
+    "name": "沉洞-守卫塔",
+    "sym": "T",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves1",
+    "name": "下陷的洞穴1",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves2",
+    "name": "凹陷洞穴2",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves3",
+    "name": "下陷的洞穴3",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves1_island",
+    "name": "沉没的洞穴1 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves2_island",
+    "name": "沉没洞穴2-岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves3_island",
+    "name": "沉没的洞穴3 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves4",
+    "name": "下陷的洞穴4",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves5",
+    "name": "凹陷洞穴5",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves6",
+    "name": "下陷的洞穴6",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves4_island",
+    "name": "沉没洞穴4-岛",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves5_island",
+    "name": "沉没的洞穴5 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves6_island",
+    "name": "沉没的洞穴6 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves7",
+    "name": "凹陷洞穴7",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves8",
+    "name": "下陷的洞穴8",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves9",
+    "name": "凹陷洞穴9",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves7_island",
+    "name": "沉没的洞穴7 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves8_island",
+    "name": "沉没的洞穴8 -岛屿",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "water_caves9_island",
+    "name": "沉没的洞穴9-岛",
+    "sym": "W",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Bunker1",
+    "name": "BL9岛4 -掩体",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Bunker2",
+    "name": "BL9岛5-煤仓",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Lab1",
+    "name": "BL9岛6 -实验室",
+    "sym": "L",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Lab2",
+    "name": "BL9岛7 -实验室",
+    "sym": "L",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Dump1",
+    "name": "BL9岛8-垃圾箱",
+    "sym": "D",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Lockup1",
+    "name": "BL9岛9 -锁定",
+    "sym": "L",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_MedicalMisc1",
+    "name": "BL9岛10-医疗设施",
+    "sym": "M",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Lab3",
+    "name": "BL9岛11 -实验室",
+    "sym": "L",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Communicationtower",
+    "name": "BL9岛12 -通信塔",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Waste1",
+    "name": "BL9岛13-废物处理",
+    "sym": "W",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Waste2",
+    "name": "BL9岛14 -废物处理",
+    "sym": "W",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Basement1",
+    "name": "BL9 Island15-地下室",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Basement2",
+    "name": "BL9岛16 -地下室",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Basement3",
+    "name": "BL9 Island17-地下室",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Basement4",
+    "name": "BL9岛18 -地下室",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Basement5",
+    "name": "BL9 Island19-地下室",
+    "sym": "B",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_OutsideCamp1",
+    "name": "BL9岛20 -营地",
+    "sym": "C",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_OutsideCamp2",
+    "name": "BL9 Island21-营地",
+    "sym": "C",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_OutsideCamp3",
+    "name": "BL9岛22 -营地",
+    "sym": "C",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_OutsideCamp4",
+    "name": "BL9 Island23-营地",
+    "sym": "C",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_lavacaves_guardtower1",
+    "name": "熔融洞穴-守卫塔",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_lavacaves_guardtower2",
+    "name": "熔融洞穴-守卫塔",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_lavacaves_guardtower3",
+    "name": "熔融洞穴-守卫塔",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_lavacaves_guardtower4",
+    "name": "熔融洞穴-守卫塔",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_lavacaves_guardtower5",
+    "name": "熔融洞穴-守卫塔",
+    "sym": "T",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves1",
+    "name": "熔腔1",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves2",
+    "name": "熔腔2",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves3",
+    "name": "熔融洞穴3",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves1_island",
+    "name": "熔融洞穴1 -岛屿",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves2_island",
+    "name": "熔岩洞穴2-岛",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves3_island",
+    "name": "熔融洞穴3 -岛屿",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves4",
+    "name": "熔融洞穴4",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves5",
+    "name": "熔腔5",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves6",
+    "name": "熔融洞穴6",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves4_island",
+    "name": "熔岩洞穴4-岛",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves5_island",
+    "name": "熔融洞穴5 -岛屿",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves6_island",
+    "name": "熔融洞穴6 -岛屿",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves7",
+    "name": "熔腔7",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves8",
+    "name": "熔腔8",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves9",
+    "name": "熔融洞穴9",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves7_island",
+    "name": "熔岩洞穴7-岛",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves8_island",
+    "name": "熔融洞穴8 -岛屿",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lava_caves9_island",
+    "name": "熔岩洞穴9-岛",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Ovens",
+    "name": "BL9岛24 -烤箱",
+    "sym": "O",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Caves1",
+    "name": "BL9 Island25-洞穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Container1",
+    "name": "BL9岛26 -悬挂式集装箱",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Container2",
+    "name": "BL9岛27-悬浮式集装箱",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Caves2",
+    "name": "BL9岛28 -洞穴",
+    "sym": "C",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_acidcaves_guardtower1",
+    "name": "酸性洞穴-守卫塔",
+    "sym": "T",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_acidcaves_guardtower2",
+    "name": "酸性洞穴-守卫塔",
+    "sym": "T",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_acidcaves_guardtower3",
+    "name": "酸性洞穴-守卫塔",
+    "sym": "T",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_acidcaves_guardtower4",
+    "name": "酸性洞穴-守卫塔",
+    "sym": "T",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_acidcaves_guardtower5",
+    "name": "酸性洞穴-守卫塔",
+    "sym": "T",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves1",
+    "name": "酸性洞穴1",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves2",
+    "name": "酸性洞穴2",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves3",
+    "name": "酸性洞穴3",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves1_island",
+    "name": "酸性洞穴1 -岛屿",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves2_island",
+    "name": "酸性洞穴2-岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves3_island",
+    "name": "酸性洞穴3 -岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves4",
+    "name": "酸性洞穴4",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves5",
+    "name": "酸性洞穴5",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves6",
+    "name": "酸性洞穴6",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves4_island",
+    "name": "酸性洞穴4-岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves5_island",
+    "name": "酸性洞穴5 -岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves6_island",
+    "name": "酸性洞穴6 -岛屿",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves7",
+    "name": "酸性洞穴7",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves8",
+    "name": "酸性洞穴8",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves9",
+    "name": "酸性洞穴9",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves7_island",
+    "name": "酸性洞穴7-岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves8_island",
+    "name": "酸性洞穴8 -岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acid_caves9_island",
+    "name": "酸性洞穴9-岛",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_SandCamp1",
+    "name": "BL9岛29 -沙营地",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_SandCamp2",
+    "name": "BL9岛30 -沙营地",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Merc1",
+    "name": "BL9岛31-将军领地",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Merc2",
+    "name": "BL9岛32 -一般领域",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Merc3",
+    "name": "BL9岛33-将军领地",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Merc4",
+    "name": "BL9岛34 -一般领域",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Road_Fortress1",
+    "name": "BL9岛35 -通往堡垒的道路",
+    "sym": "R",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Road_Fortress2",
+    "name": "BL9 Island36-要塞之路",
+    "sym": "R",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress1",
+    "name": "BL9岛37 -堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress2",
+    "name": "BL9岛38 -堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Ruins",
+    "name": "BL9岛39-废墟",
+    "sym": "R",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress3",
+    "name": "BL9岛40 -堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress4",
+    "name": "BL9岛41 -堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress5",
+    "name": "BL9 Island42-堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Fortress6",
+    "name": "BL9岛43 -堡垒",
+    "sym": "F",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Showtime1",
+    "name": "BL9 Island44-展览时间",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_Island_Showtime2",
+    "name": "BL9岛45 -放映时间",
+    "sym": "S",
+    "color": "blue",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_argan1",
+    "name": "精氨酸的BL9结构域",
+    "sym": "A",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_argan2",
+    "name": "精氨酸的BL9结构域",
+    "sym": "A",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_argan3",
+    "name": "精氨酸的BL9结构域",
+    "sym": "A",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_argan4",
+    "name": "精氨酸的BL9结构域",
+    "sym": "A",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan1",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan2",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan3",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan4",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan5",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan6",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan7",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan8",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_argan9",
+    "name": "BL9 Arganoides移动基地",
+    "sym": "B",
+    "color": "magenta",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_surface5",
+    "name": "蜂巢BL9异常",
+    "sym": "H",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_surface6",
+    "name": "蜂巢BL9异常",
+    "sym": "H",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_surface7",
+    "name": "蜂巢BL9异常",
+    "sym": "H",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hive_surface8",
+    "name": "蜂巢BL9异常",
+    "sym": "H",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ulniv1",
+    "name": "BL9异常-Ulniviute",
+    "sym": "U",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ulniv2",
+    "name": "BL9异常-Ulniviute",
+    "sym": "U",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ulniv3",
+    "name": "BL9异常-Ulniviute",
+    "sym": "U",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ulniv4",
+    "name": "BL9异常-Ulniviute",
+    "sym": "U",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory1",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory2",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory3",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory4",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory5",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory6",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory7",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory8",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_factory9",
+    "name": "BL9异常-废弃工厂",
+    "sym": "F",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_yengn1",
+    "name": "BL9异常-Yengnutrium",
+    "sym": "Y",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_yengn2",
+    "name": "BL9异常-Yengnutrium",
+    "sym": "Y",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_yengn3",
+    "name": "BL9异常-Yengnutrium",
+    "sym": "Y",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_yengn4",
+    "name": "BL9异常-Yengnutrium",
+    "sym": "Y",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair1",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair2",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair3",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair4",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair5",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair6",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair7",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair8",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultlair9",
+    "name": "BL9异常-邪教巢穴",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_tavrav1",
+    "name": "BL9异常- Tavravium",
+    "sym": "T",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_tavrav2",
+    "name": "BL9异常- Tavravium",
+    "sym": "T",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_tavrav3",
+    "name": "BL9异常- Tavravium",
+    "sym": "T",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_tavrav4",
+    "name": "BL9异常- Tavravium",
+    "sym": "T",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst1",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst2",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst3",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst4",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst5",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst6",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst7",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst8",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_powerst9",
+    "name": "BL9异常- Tavravium",
+    "sym": "P",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_inhrav1",
+    "name": "BL9异常-Inhravtidius",
+    "sym": "I",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_inhrav2",
+    "name": "BL9异常-Inhravtidius",
+    "sym": "I",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_inhrav3",
+    "name": "BL9异常-Inhravtidius",
+    "sym": "I",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_inhrav4",
+    "name": "BL9异常-Inhravtidius",
+    "sym": "I",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab1",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab2",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab3",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab4",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab5",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab6",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab7",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab8",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_lab9",
+    "name": "BL9异常-废弃实验室",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ezron1",
+    "name": "BL9异常-Ezronmidi",
+    "sym": "E",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ezron2",
+    "name": "BL9异常-Ezronmidi",
+    "sym": "E",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ezron3",
+    "name": "BL9异常-Ezronmidi",
+    "sym": "E",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_ezron4",
+    "name": "BL9异常-Ezronmidi",
+    "sym": "E",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon1",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY",
+      "NO_ROTATE"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon2",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon3",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon4",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon5",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon6",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon7",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon8",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_cultdungeon9",
+    "name": "BL9异常-邪教地牢",
+    "sym": "D",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden1",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden2",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden3",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden4",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden5",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden6",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden7",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden8",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_salden9",
+    "name": "BL9 Saldeniums移动基地",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "molten_caves_surface1",
+    "name": "熔融洞穴BL9异常",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "molten_caves_surface2",
+    "name": "熔融洞穴BL9异常",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "molten_caves_surface3",
+    "name": "熔融洞穴BL9异常",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "molten_caves_surface4",
+    "name": "熔融洞穴BL9异常",
+    "sym": "L",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_salden1",
+    "name": "Saldeniums的BL9域",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_salden2",
+    "name": "Saldeniums的BL9域",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_salden3",
+    "name": "Saldeniums的BL9域",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_salden4",
+    "name": "Saldeniums的BL9域",
+    "sym": "S",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel1",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel2",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel3",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel4",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel5",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel6",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel7",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel8",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_wanzel9",
+    "name": "BL9万泽蒂姆斯移动基地",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acidic_caves_surface1",
+    "name": "酸性洞穴BL9异常",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acidic_caves_surface2",
+    "name": "酸性洞穴BL9异常",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acidic_caves_surface3",
+    "name": "酸性洞穴BL9异常",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "acidic_caves_surface4",
+    "name": "酸性洞穴BL9异常",
+    "sym": "A",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_wanzel1",
+    "name": "万寿草BL9域",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_wanzel2",
+    "name": "万寿草BL9域",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_wanzel3",
+    "name": "万寿草BL9域",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_domain_wanzel4",
+    "name": "万寿草BL9域",
+    "sym": "W",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core1",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core2",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core3",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core4",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core5",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core61",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core62",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core71",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core72",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core81",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core82",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core83",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core91",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core92",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "BL9_anomaly_core93",
+    "name": "BL9异常结构",
+    "sym": "A",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [
+      "RISK_LOW",
+      "SOURCE_SAFETY"
+    ]
+  }
+]

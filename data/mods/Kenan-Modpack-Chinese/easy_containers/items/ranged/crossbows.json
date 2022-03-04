@@ -1,0 +1,128 @@
+[
+  {
+    "type": "GUN",
+    "id": "bullet_crossbow",
+    "copy-from": "bullet_crossbow",
+    "name": {
+      "str": "弹矢弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "pebble": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "hand_crossbow",
+    "copy-from": "hand_crossbow",
+    "name": {
+      "str": "手弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "crossbow",
+    "copy-from": "crossbow",
+    "name": {
+      "str": "木弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "compositecrossbow",
+    "copy-from": "compositecrossbow",
+    "name": {
+      "str": "复合弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "compcrossbow",
+    "copy-from": "compcrossbow",
+    "name": {
+      "str": "合成弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "huge_crossbow",
+    "copy-from": "huge_crossbow",
+    "name": {
+      "str": "重弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "rep_crossbow",
+    "copy-from": "rep_crossbow",
+    "name": {
+      "str": "连弩"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "bolt": 10
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

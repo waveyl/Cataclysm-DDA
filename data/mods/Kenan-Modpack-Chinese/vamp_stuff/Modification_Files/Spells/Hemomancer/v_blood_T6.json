@@ -1,0 +1,91 @@
+[
+  {
+    "id": "t6_blood_desolation",
+    "type": "SPELL",
+    "name": {
+      "str": "荒凉"
+    },
+    "description": "牺牲大量生命召唤一个<color_light_brown>持续的光环</color>，从周围所有生物处<color_yellow>吸取生命</color>，造成持续的<color_green>生化伤害</color>。\n\n这是一个<color_magenta>六阶</color>法术。",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_desolation_aura",
+    "base_energy_cost": 55,
+    "energy_source": "HP",
+    "spell_class": "VAMP_BLOOD_spellcaster",
+    "difficulty": 6,
+    "max_level": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_duration": 8000,
+    "max_duration": 24000,
+    "base_casting_time": 3000,
+    "flags": [
+      "SOMATIC",
+      "CONCENTRATE",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ]
+  },
+  {
+    "id": "t6_blood_crimsoncoat",
+    "type": "SPELL",
+    "name": {
+      "str": "深红色外套"
+    },
+    "//": "Timed countering tactic. Useful for preventing high damage attacks like SMASH or gunshots.",
+    "description": "你抽回的瞬间非常短暂，用<color_light_brown>厚的血层</color>覆盖全身，抵消大部分物理伤害。这厚厚的一层不会给你带来任何负担。\n\n这是一个<color_magenta>第6层法术。",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "spawn_item",
+    "shape": "blast",
+    "effect_str": "v_hemo_crimsoncoat_coat",
+    "base_energy_cost": 10,
+    "energy_source": "HP",
+    "spell_class": "VAMP_BLOOD_spellcaster",
+    "difficulty": 6,
+    "max_level": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 500,
+    "max_duration": 1500,
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS"
+    ]
+  },
+  {
+    "id": "t6_blood_leechswhip",
+    "type": "SPELL",
+    "name": {
+      "str": "水蛭鞭"
+    },
+    "description": "召唤<color_light_brown>水蛭之鞭</color>，一种生物近战武器。\n*如果在激活状态下挥舞，则为属性（STR+1，SPD+5）提供正面平级加值，并使你的最大生命值增加10。\n\n这是<color_magenta>第6层的咒语。",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "spawn_item",
+    "shape": "blast",
+    "effect_str": "v_hemo_whip",
+    "base_energy_cost": 25,
+    "energy_source": "HP",
+    "spell_class": "VAMP_BLOOD_spellcaster",
+    "difficulty": 4,
+    "max_level": 30,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 4500,
+    "max_duration": 18000,
+    "duration_increment": 200,
+    "base_casting_time": 200,
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS"
+    ]
+  }
+]

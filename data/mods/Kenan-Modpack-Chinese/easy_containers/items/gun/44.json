@@ -1,0 +1,108 @@
+[
+  {
+    "type": "GUN",
+    "id": "deagle_44",
+    "copy-from": "deagle_44",
+    "name": {
+      "str_sp": "沙漠之鹰 .44 手枪"
+    },
+    "pocket_data": [
+      {
+        "magazine_well": "250 ml",
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "1000 kg",
+        "item_restriction": [
+          "deaglemag"
+        ],
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "henry_big_boy",
+    "copy-from": "henry_big_boy",
+    "name": {
+      "str_sp": "亨利 “大男孩” .44 马格南步枪"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "44": 10
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "rifle_44",
+    "copy-from": "rifle_44",
+    "name": {
+      "str": "自制钢管步枪（.44 马格南口径）",
+      "str_pl": "自制钢管步枪（.44 马格南口径）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "44": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "ruger_redhawk",
+    "copy-from": "ruger_redhawk",
+    "name": {
+      "str_sp": "鲁格“红鹰”左轮手枪"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "holster": true,
+        "rigid": true,
+        "ammo_restriction": {
+          "44": 6
+        },
+        "allowed_speedloaders": [
+          "44_speedloader6"
+        ],
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "sw629",
+    "copy-from": "sw629",
+    "name": {
+      "str_sp": "S&W 629 左轮手枪"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "holster": true,
+        "rigid": true,
+        "ammo_restriction": {
+          "44": 6
+        },
+        "allowed_speedloaders": [
+          "44_speedloader6"
+        ],
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

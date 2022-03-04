@@ -1,0 +1,51 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "protein_milk",
+    "name": {
+      "str_sp": "高蛋白“牛奶”"
+    },
+    "weight": "258 g",
+    "color": "white",
+    "spoils_in": "1 d",
+    "container": "jug_plastic",
+    "comestible_type": "DRINK",
+    "symbol": "~",
+    "quench": 10,
+    "healthy": 1,
+    "calories": 750,
+    "description": "浓稠的白色液体，富含蛋白质。这个特殊的份量比一般牛奶的大50倍，使它成为一个像样的，但又非常奇怪的食物。",
+    "price": 38,
+    "price_postapoc": 50,
+    "material": [
+      "milk"
+    ],
+    "volume": "250 ml",
+    "phase": "liquid",
+    "flags": [
+      "EATEN_COLD"
+    ],
+    "vitamins": [
+      [
+        "vitC",
+        2
+      ]
+    ],
+    "fun": 0
+  },
+  {
+    "type": "GENERIC",
+    "id": "milk_serum",
+    "name": {
+      "str": "乳牛女仆血清",
+      "str_pl": "乳牛女仆血清"
+    },
+    "description": "一种诱变剂血清，用于将受试者转变成能产生大量牛奶的温顺仆人。与追随者交谈以使用。",
+    "weight": "250 g",
+    "symbol": "-",
+    "color": "dark_gray",
+    "price": "50 USD",
+    "volume": "150 ml",
+    "category": "tools"
+  }
+]

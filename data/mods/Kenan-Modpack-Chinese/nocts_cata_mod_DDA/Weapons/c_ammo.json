@@ -1,0 +1,91 @@
+[
+  {
+    "id": "flintlock_ammo_mine",
+    "copy-from": "flintlock_ammo",
+    "type": "AMMO",
+    "name": {
+      "str": "长纸卷弹"
+    },
+    "//": "meant as a companion to the Survivor's Flintlock Sniper.",
+    "description": "一种装有黑色粉末和小球的纸筒。美国南北战争历史性炮弹的一个纸质版本。迷你球仍然像以前一样致命和准确。",
+    "weight": "55 g",
+    "price": "25 USD",
+    "price_postapoc": "15 USD",
+    "proportional": {
+      "dispersion": 0.89
+    },
+    "relative": {
+      "recoil": 300,
+      "range": 19
+    }
+  },
+  {
+    "id": "c_hydrogen_gas",
+    "type": "AMMO",
+    "name": {
+      "str_sp": "氢气"
+    },
+    "category": "chems",
+    "description": "压缩后用作燃料的轻的、易燃的气体。相当密集的能源，但也需要大量的能源生产，更何况没有灾前工业。",
+    "weight": "1438 mg",
+    "volume": "1500 ml",
+    "price": "50 cent",
+    "price_postapoc": "5 cent",
+    "symbol": "=",
+    "color": "white",
+    "stack_size": 24,
+    "material": [
+      "c_hydrogen_gas"
+    ],
+    "phase": "liquid",
+    "ammo_type": "c_hydrogen",
+    "flags": [
+      "NO_DROP",
+      "IRREMOVABLE"
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "c_bioampoule",
+    "category": "other",
+    "name": {
+      "str": "生物安瓿"
+    },
+    "symbol": "=",
+    "color": "cyan",
+    "description": "一种由奇怪的树脂填充奇怪的液体形成的薄壁胶囊，由奇特的自动注射器机构使用。",
+    "volume": "100 ml",
+    "weight": "1 g",
+    "ammo_type": "c_bioampoule_type"
+  },
+  {
+    "type": "AMMO",
+    "id": "c_alien_resin_bullet",
+    "price_postapoc": "20 cent",
+    "name": {
+      "str": "树脂子弹"
+    },
+    "symbol": "=",
+    "color": "green",
+    "description": "一个玻璃状的绿色外星树脂小球，被塑造成一个类似现代步枪子弹的形状，尽管是细长的。",
+    "material": [
+      "alien_resin"
+    ],
+    "volume": "250 ml",
+    "weight": "3 g",
+    "ammo_type": "c_alien_resin_bullet_type",
+    "damage": {
+      "damage_type": "stab",
+      "amount": 30,
+      "armor_penetration": 10
+    },
+    "range": 45,
+    "loudness": 2,
+    "count": 20,
+    "effects": [
+      "NEVER_MISFIRES",
+      "NON_FOULING",
+      "RECOVER_10"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "105mm",
+    "name": "105mm外壳",
+    "default": "105mm_heat"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "120mm_usable",
+    "name": "120mm 炮弹",
+    "default": "120mm_usable_heat"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "155mm",
+    "name": "155mm 炮弹",
+    "default": "155mm_frag"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "25mm",
+    "name": "25x137mm",
+    "default": "25mm_hei"
+  }
+]

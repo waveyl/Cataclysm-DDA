@@ -1,0 +1,166 @@
+[
+  {
+    "type": "GUN",
+    "id": "selfbow",
+    "copy-from": "selfbow",
+    "name": {
+      "str": "幸存者简易弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "shortbow",
+    "copy-from": "shortbow",
+    "name": {
+      "str": "短弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "compbow",
+    "copy-from": "compbow",
+    "name": {
+      "str": "现代复合狩猎弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "compositebow",
+    "copy-from": "compositebow",
+    "name": {
+      "str": "复合弓（重）",
+      "str_pl": "复合弓（重）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "reflexbow",
+    "copy-from": "reflexbow",
+    "name": {
+      "str": "复合弓（轻）",
+      "str_pl": "复合弓（轻）"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "recurbow",
+    "copy-from": "recurbow",
+    "name": {
+      "str": "现代反曲弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "longbow",
+    "copy-from": "longbow",
+    "name": {
+      "str": "长弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "compgreatbow",
+    "copy-from": "compgreatbow",
+    "name": {
+      "str": "复合巨弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "reflexrecurvebow",
+    "copy-from": "reflexrecurvebow",
+    "name": {
+      "str": "奥运竞技反曲弓"
+    },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": {
+          "arrow": 1
+        },
+        "max_contains_weight": "1000 kg",
+        "max_item_length": "1 km"
+      }
+    ]
+  }
+]

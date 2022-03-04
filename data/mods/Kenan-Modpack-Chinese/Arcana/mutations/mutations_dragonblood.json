@@ -1,0 +1,1224 @@
+[
+  {
+    "type": "mutation",
+    "id": "THRESH_DRAGONBLOOD",
+    "name": {
+      "str": "龙血"
+    },
+    "points": 1,
+    "description": "任何形式的力量。猩红教派相信龙血圣礼会使他们强大到足以在大灾变中幸存下来，统治人类和怪物。你活了这么久也许能证明他们是对的。",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true,
+    "allowed_category": [
+      "DRAGONBLOOD"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_EMBERS_DRAGONBLOOD",
+    "name": {
+      "str": "余烬痕迹"
+    },
+    "points": 5,
+    "description": "非人的力量赋予了你操控你的自然属性和周围环境的能力，从火焰防护到扭曲空间。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_FIREAFFINITY"
+    ],
+    "prereqs2": [
+      "ARCANA_DRAGONCLAWS"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "changes_to": [
+      "SPELL_SUMMONFIEND"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_elemental_sign",
+        1
+      ],
+      [
+        "arcana_mark_displacing_slash",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "//": "ID retained to reduce redundancy and avoid load errors.",
+    "id": "SPELL_SUMMONFIEND",
+    "name": {
+      "str": "地狱之火的印记"
+    },
+    "points": 10,
+    "description": "非人道的力量赋予了你非自然的能力，召唤邪恶火焰的力量和召唤灰烬不死生物的力量。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_DRAGONFIRE"
+    ],
+    "prereqs2": [
+      "SPELL_EMBERS_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_elemental_sign",
+        1
+      ],
+      [
+        "arcana_mark_displacing_slash",
+        1
+      ],
+      [
+        "arcana_mark_infernal_flame",
+        1
+      ],
+      [
+        "arcana_mark_summon_fiend",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_INSTINCT_DRAGONBLOOD",
+    "name": {
+      "str": "本能的印记"
+    },
+    "points": 5,
+    "description": "非人道的力量赋予你与你的非人本性相关的能力，包括增强力量的咒语，以及抵御寄生虫或其他危险的能力。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_TOXINIMMUNE"
+    ],
+    "prereqs2": [
+      "ARCANA_DRAGONCLAWS"
+    ],
+    "changes_to": [
+      "SPELL_HUNT_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_might",
+        1
+      ],
+      [
+        "arcana_mark_revenant_blood",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_HUNT_DRAGONBLOOD",
+    "name": {
+      "str": "狩猎之印记"
+    },
+    "points": 10,
+    "description": "非人道的力量赋予你进一步磨练你的杀伤力的能力，以消耗生命的魔法和随意激发肾上腺素的能力。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "SPELL_INSTINCT_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_might",
+        1
+      ],
+      [
+        "arcana_mark_revenant_blood",
+        1
+      ],
+      [
+        "arcana_mark_drain_life",
+        1
+      ],
+      [
+        "arcana_mark_surge_adrenaline",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "//": "ID retained to reduce redundancy and avoid load errors.",
+    "id": "SPELL_SUMMONWYRM",
+    "name": {
+      "str": "憎恶之印记"
+    },
+    "points": 5,
+    "description": "非人的力量赋予了你非自然的能力，允许你召唤来自远方的奇异生物。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_DRAGONCLAWS"
+    ],
+    "prereqs2": [
+      "ARCANA_INSTINCT"
+    ],
+    "changes_to": [
+      "SPELL_BEYOND_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_summon_dark_wyrm",
+        1
+      ],
+      [
+        "arcana_mark_summon_jabberwock",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_BEYOND_DRAGONBLOOD",
+    "name": {
+      "str": "超越之印记"
+    },
+    "points": 5,
+    "description": "不人道的力量赋予了你超凡脱俗的能力，利用你与外界的联系给你的受害者带来可怕的痛苦。（记住绑定“施法”键！）",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "SPELL_SUMMONWYRM"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "spells_learned": [
+      [
+        "arcana_mark_summon_dark_wyrm",
+        1
+      ],
+      [
+        "arcana_mark_summon_jabberwock",
+        1
+      ],
+      [
+        "arcana_mark_destructive_absorption",
+        1
+      ],
+      [
+        "arcana_mark_malevolent_gaze",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_SCALYPATCHES",
+    "name": {
+      "str": "鳞块"
+    },
+    "points": 1,
+    "visibility": 2,
+    "ugliness": 1,
+    "description": "你的躯干和手臂的一部分已经被柔软的鳞片覆盖，提供了有限的保护。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONSCALES"
+    ],
+    "types": [
+      "SKIN"
+    ],
+    "stealth_modifier": -5,
+    "wet_protection": [
+      {
+        "part": "arm_l",
+        "ignored": 4
+      },
+      {
+        "part": "arm_r",
+        "ignored": 4
+      },
+      {
+        "part": "torso",
+        "ignored": 10
+      }
+    ],
+    "armor": [
+      {
+        "parts": [
+          "arm_l",
+          "arm_r",
+          "torso"
+        ],
+        "cut": 2,
+        "stab": 1
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONSCALES",
+    "name": {
+      "str": "龙鳞"
+    },
+    "points": 2,
+    "visibility": 10,
+    "ugliness": 3,
+    "description": "一套灵活的鳞片和装甲板现在覆盖你的身体，充当天然的盔甲。一定程度上减少了潮湿影响。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "prereqs": [
+      "ARCANA_SCALYPATCHES"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "types": [
+      "SKIN"
+    ],
+    "stealth_modifier": -20,
+    "wet_protection": [
+      {
+        "part": "head",
+        "ignored": 3
+      },
+      {
+        "part": "leg_l",
+        "ignored": 10
+      },
+      {
+        "part": "leg_r",
+        "ignored": 10
+      },
+      {
+        "part": "foot_l",
+        "ignored": 3
+      },
+      {
+        "part": "foot_r",
+        "ignored": 3
+      },
+      {
+        "part": "arm_l",
+        "ignored": 9
+      },
+      {
+        "part": "arm_r",
+        "ignored": 9
+      },
+      {
+        "part": "hand_l",
+        "ignored": 2
+      },
+      {
+        "part": "hand_r",
+        "ignored": 2
+      },
+      {
+        "part": "torso",
+        "ignored": 20
+      }
+    ],
+    "armor": [
+      {
+        "parts": [
+          "torso",
+          "arm_l",
+          "arm_r",
+          "hand_l",
+          "hand_r",
+          "leg_l",
+          "leg_r",
+          "foot_l",
+          "foot_r",
+          "mouth",
+          "eyes"
+        ],
+        "bash": 1,
+        "cut": 4,
+        "stab": 2,
+        "bullet": 1,
+        "acid": 3
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_FIREAFFINITY",
+    "name": {
+      "str": "元素亲和力"
+    },
+    "points": 4,
+    "bodytemp_modifiers": [
+      -2500,
+      0
+    ],
+    "description": "你的身体在热和火焰周围感到异常舒适，让你能忍受它的热量更长时间，并减少火灾的直接伤害。你也不再因为过热而失去速度，尽管中暑的其他症状仍然会影响你。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "prereqs": [
+      "ARCANA_INNERFIRE",
+      "ARCANA_DRAGONFIRE"
+    ],
+    "enchantments": [
+      "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY"
+    ],
+    "armor": [
+      {
+        "parts": [
+          "torso",
+          "arm_l",
+          "arm_r",
+          "hand_l",
+          "hand_r",
+          "leg_l",
+          "leg_r",
+          "foot_l",
+          "foot_r",
+          "mouth",
+          "eyes"
+        ],
+        "heat": 6
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_TOXINIMMUNE",
+    "name": {
+      "str": "代谢适应"
+    },
+    "points": 5,
+    "description": "你的身体已经适应了捕食这个世界的新生命。它不足以对付不死的肉，但是变异的肉对你的系统来说更容易忍受。尽管不是你的调色板。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "prereqs": [
+      "ARCANA_INNERFIRE",
+      "ARCANA_DRAGONFIRE"
+    ],
+    "vitamin_rates": [
+      [
+        "mutant_toxin",
+        1
+      ]
+    ],
+    "vitamins_absorb_multi": [
+      [
+        "all",
+        [
+          [
+            "mutant_toxin",
+            0.75
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_INNERHEAT",
+    "name": {
+      "str": "内热"
+    },
+    "points": 1,
+    "mixed_effect": true,
+    "bodytemp_modifiers": [
+      125,
+      500
+    ],
+    "bodytemp_sleep": 125,
+    "description": "一种奇怪的热量渗透到你的身体里，使你热身以换取更活跃的新陈代谢。当你需要多吃多喝的时候，你也会发现更容易从体力消耗中恢复过来，也更容易愈合伤口。",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [
+      "ARCANA_INNERFIRE"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "METABOLISM"
+    ],
+    "metabolism_modifier": 0.25,
+    "stomach_size_multiplier": 1.5,
+    "thirst_modifier": 0.25,
+    "healing_awake": 0.5,
+    "healing_resting": 0.25,
+    "mending_modifier": 1,
+    "stamina_regen_modifier": 0.5,
+    "vitamin_rates": [
+      [
+        "blood",
+        -1
+      ],
+      [
+        "redcells",
+        -1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_INNERFIRE",
+    "name": {
+      "str": "内火"
+    },
+    "points": 2,
+    "mixed_effect": true,
+    "bodytemp_modifiers": [
+      250,
+      1000
+    ],
+    "bodytemp_sleep": 250,
+    "description": "你身体深处那股奇怪的温暖变得更加强烈，它的影响也变得更加明显。当你还需要多吃多喝的时候，你的耐力和治疗能力已经适应了。一种奇怪的光芒也可以在你的喉咙后面隐约可见，给你的每一句话都带来一种不自然的威胁。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_INNERHEAT"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONFIRE"
+    ],
+    "leads_to": [
+      "ARCANA_FIREAFFINITY",
+      "ARCANA_TOXINIMMUNE"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "METABOLISM"
+    ],
+    "metabolism_modifier": 0.5,
+    "stomach_size_multiplier": 2,
+    "thirst_modifier": 0.5,
+    "healing_awake": 1,
+    "healing_resting": 0.5,
+    "mending_modifier": 2,
+    "stamina_regen_modifier": 0.666,
+    "social_modifiers": {
+      "persuade": -25,
+      "intimidate": 25
+    },
+    "vitamin_rates": [
+      [
+        "blood",
+        -3
+      ],
+      [
+        "redcells",
+        -3
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONFIRE",
+    "name": {
+      "str": "龙炎"
+    },
+    "points": 5,
+    "mixed_effect": true,
+    "bodytemp_modifiers": [
+      0,
+      1500
+    ],
+    "bodytemp_sleep": 750,
+    "description": "你的身体已经进一步适应了，利用了刺激你身体的奇异能量。你仍然需要比平常更多的食物和水，但是相对于缺点，好处更明显。激活呼吸短程火焰。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_INNERFIRE"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "METABOLISM"
+    ],
+    "metabolism_modifier": 0.75,
+    "stomach_size_multiplier": 2.25,
+    "thirst_modifier": 0.75,
+    "healing_awake": 2.5,
+    "healing_resting": 1.5,
+    "mending_modifier": 5,
+    "stamina_regen_modifier": 0.75,
+    "social_modifiers": {
+      "persuade": -25,
+      "intimidate": 25
+    },
+    "active": true,
+    "cost": 60,
+    "hunger": true,
+    "ranged_mutation": {
+      "type": "mut_dragonfire",
+      "message": "You loose a tongue of flame from your mouth."
+    },
+    "vitamin_rates": [
+      [
+        "blood",
+        -5
+      ],
+      [
+        "redcells",
+        -5
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_SCALYWINGS",
+    "name": {
+      "str": "鳞翼"
+    },
+    "points": 1,
+    "mixed_effect": true,
+    "visibility": 4,
+    "ugliness": 2,
+    "description": "你有一对巨大的翅膀。你的身体太重，无法飞行，它们大多只是妨碍你，阻止你穿任何非织物制成的躯干装备。然而，你的背部肌肉会因为这一增长而略有改善，让你的体重增加一点，耐力增加一点。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_DRAGONSCALES"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONWINGS"
+    ],
+    "encumbrance_always": [
+      [
+        "torso",
+        5
+      ]
+    ],
+    "encumbrance_covered": [
+      [
+        "torso",
+        5
+      ]
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "WINGS"
+    ],
+    "cardio_multiplier": 1.1,
+    "restricts_gear": [
+      "torso"
+    ],
+    "allow_soft_gear": true,
+    "dodge_modifier": -1,
+    "weight_capacity_modifier": 1.1
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONWINGS",
+    "name": {
+      "str": "龙翼"
+    },
+    "points": 2,
+    "mixed_effect": true,
+    "visibility": 4,
+    "ugliness": 2,
+    "description": "你有一对巨大的，有鳞片的翅膀。当你仍然不能飞行时，它确实使你对坠落伤害免疫。你的肌肉已经适应了支持他们的运动，使他们减少了负担，提高了你的最大负重，并增加了耐力。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_SCALYWINGS"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "encumbrance_covered": [
+      [
+        "torso",
+        5
+      ]
+    ],
+    "types": [
+      "WINGS"
+    ],
+    "enchantments": [
+      "ENCH_DRAGONBLOOD_DRACONIC_WINGS"
+    ],
+    "cardio_multiplier": 1.2,
+    "restricts_gear": [
+      "torso"
+    ],
+    "allow_soft_gear": true,
+    "weight_capacity_modifier": 1.25
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONCLAWS",
+    "name": {
+      "str": "弯爪"
+    },
+    "points": 2,
+    "visibility": 3,
+    "ugliness": 2,
+    "description": "你的手指末端有尖锐弯曲的爪子，这使得你的徒手攻击更加危险。然而，如果你戴着手套，它们确实会有点妨碍你。",
+    "valid": false,
+    "purifiable": false,
+    "butchering_quality": 9,
+    "types": [
+      "CLAWS"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "encumbrance_covered": [
+      [
+        "hand_l",
+        5
+      ],
+      [
+        "hand_r",
+        5
+      ]
+    ],
+    "rand_cut_bonus": {
+      "min": 2,
+      "max": 6
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONTEETH",
+    "name": {
+      "str": "尖牙"
+    },
+    "points": 2,
+    "visibility": 2,
+    "ugliness": 2,
+    "description": "你的牙齿已经变成了各种各样尖尖的模仿人类牙齿的形状，当条件允许的时候，你可以进行额外的攻击。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONMUZZLE"
+    ],
+    "types": [
+      "TEETH"
+    ],
+    "attacks": {
+      "attack_text_u": "你把牙齿扎入%s",
+      "attack_text_npc": "%1$s把牙齿刺进%2$s",
+      "body_part": "mouth",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 2
+      }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONMUZZLE",
+    "name": {
+      "str": "龙形口鼻"
+    },
+    "points": -2,
+    "visibility": 4,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "你的下巴和鼻子已经整合成了一个有点长的喙，尖尖的但却相当宽大。它可以在战斗中撕咬敌人，而且看起来令人印象非常深刻，但却妨碍了你佩戴口罩。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_DRAGONSCALES"
+    ],
+    "prereqs2": [
+      "ARCANA_DRAGONTEETH"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "TEETH",
+      "MUZZLE",
+      "facial_hair"
+    ],
+    "restricts_gear": [
+      "mouth"
+    ],
+    "social_modifiers": {
+      "intimidate": 20
+    },
+    "attacks": {
+      "attack_text_u": "你用你的嘴野蛮地撕碎了%s",
+      "attack_text_npc": "%1$s用他的嘴野蛮地撕碎%2$s",
+      "body_part": "mouth",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 4
+      }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_SCALYLEGS",
+    "name": {
+      "str": "带鳞后肢"
+    },
+    "points": -2,
+    "visibility": 4,
+    "ugliness": 2,
+    "mixed_effect": true,
+    "description": "你的双腿已经被改造成了一个数字化的结构，末端是邪恶的利爪，使你无法穿鞋，行走困难，尤其是在崎岖的地形上。如果你想在上面穿什么就更糟了。好的一面是，你可以用他们踢得相当有效。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "prereqs": [
+      "ARCANA_DRAGONSCALES"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONLEGS"
+    ],
+    "types": [
+      "LEGS"
+    ],
+    "encumbrance_always": [
+      [
+        "leg_l",
+        10
+      ],
+      [
+        "leg_r",
+        10
+      ],
+      [
+        "foot_l",
+        10
+      ],
+      [
+        "foot_r",
+        10
+      ]
+    ],
+    "encumbrance_covered": [
+      [
+        "leg_l",
+        10
+      ],
+      [
+        "leg_r",
+        10
+      ],
+      [
+        "foot_l",
+        10
+      ],
+      [
+        "foot_r",
+        10
+      ]
+    ],
+    "restricts_gear": [
+      "foot_l",
+      "foot_r"
+    ],
+    "movecost_obstacle_modifier": 1.3,
+    "movecost_flatground_modifier": 0.9,
+    "noise_modifier": 2,
+    "attacks": [
+      {
+        "attack_text_u": "You rake %s with your toe claws",
+        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
+        "chance": 40,
+        "strength_damage": {
+          "damage_type": "cut",
+          "amount": 2
+        }
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONLEGS",
+    "name": {
+      "str": "龙形后肢"
+    },
+    "points": 1,
+    "visibility": 4,
+    "ugliness": 2,
+    "mixed_effect": true,
+    "description": "你的腿已经被改造成一个数字结构，以邪恶锋利的爪子结尾。虽然你仍然不能穿鞋子，但你的新腿已经适应了两足动物的结构，使它们不再那么笨拙。崎岖的地形仍然是一个障碍，它们最好不被遮挡，但是在平地上你可以走得更快一些。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "prereqs": [
+      "ARCANA_SCALYLEGS"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "types": [
+      "LEGS"
+    ],
+    "encumbrance_always": [
+      [
+        "leg_l",
+        5
+      ],
+      [
+        "leg_r",
+        5
+      ],
+      [
+        "foot_l",
+        5
+      ],
+      [
+        "foot_r",
+        5
+      ]
+    ],
+    "encumbrance_covered": [
+      [
+        "leg_l",
+        5
+      ],
+      [
+        "leg_r",
+        5
+      ],
+      [
+        "foot_l",
+        5
+      ],
+      [
+        "foot_r",
+        5
+      ]
+    ],
+    "restricts_gear": [
+      "foot_l",
+      "foot_r"
+    ],
+    "movecost_obstacle_modifier": 1.2,
+    "movecost_flatground_modifier": 0.8,
+    "noise_modifier": 1.5,
+    "attacks": [
+      {
+        "attack_text_u": "You rake %s with your toe claws",
+        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
+        "chance": 40,
+        "strength_damage": {
+          "damage_type": "cut",
+          "amount": 3
+        }
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_SCALYTAIL",
+    "name": {
+      "str": "鳞尾"
+    },
+    "points": 2,
+    "visibility": 6,
+    "ugliness": 2,
+    "description": "你的尾巴又长又细，像蜥蜴。它足够灵活，有助于平衡一点，并使一个有用的鞭子。防止穿非织物裤子。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_DRAGONSCALES"
+    ],
+    "changes_to": [
+      "ARCANA_DRAGONTAIL"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "TAIL"
+    ],
+    "restricts_gear": [
+      "leg_l",
+      "leg_r"
+    ],
+    "allow_soft_gear": true,
+    "attacks": {
+      "attack_text_u": "你用尾巴抽打%s",
+      "attack_text_npc": "%1$s 用尾巴鞭打 %2$s",
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 1
+      }
+    },
+    "dodge_modifier": 2
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONTAIL",
+    "name": {
+      "str": "龙尾"
+    },
+    "points": 3,
+    "visibility": 6,
+    "ugliness": 2,
+    "description": "你有一条又长又细，像蜥蜴一样的尾巴，尾巴末端有一些看起来很难看的尖刺。它不再有助于平衡，但仍然是一个有用的鞭子。防止穿非织物裤子。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_SCALYTAIL"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "TAIL"
+    ],
+    "restricts_gear": [
+      "leg_l",
+      "leg_r"
+    ],
+    "allow_soft_gear": true,
+    "attacks": {
+      "attack_text_u": "你用你的尾巴鞭打%s",
+      "attack_text_npc": "%1$s 用尾巴鞭打 %2$s",
+      "chance": 20,
+      "strength_damage": [
+        {
+          "damage_type": "stab",
+          "amount": 2
+        },
+        {
+          "damage_type": "bash",
+          "amount": 1
+        }
+      ]
+    },
+    "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
+    "dodge_modifier": 1
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONHORNS",
+    "name": {
+      "str": "后掠角"
+    },
+    "points": 3,
+    "visibility": 3,
+    "ugliness": 1,
+    "mixed_effect": true,
+    "description": "你有一对相对较短的角，扫过并指向后面。虽然他们不是很好的武器，并阻止你戴任何非织物制成的头饰，但他们往往会妨碍攻击你的头部。",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "types": [
+      "HORNS"
+    ],
+    "restricts_gear": [
+      "head"
+    ],
+    "allow_soft_gear": true,
+    "armor": [
+      {
+        "parts": "head",
+        "bash": 7,
+        "cut": 9,
+        "stab": 5,
+        "bullet": 3
+      }
+    ],
+    "attacks": {
+      "attack_text_u": "你这个混蛋%s",
+      "attack_text_npc": "%1$s 头槌 %2$s",
+      "chance": 40,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 2
+      }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_PLATES",
+    "name": {
+      "str": "龙形板甲"
+    },
+    "points": 6,
+    "visibility": 6,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "你在身体的某个部位长出了厚厚的、重叠的板状物，就像是坚固的天然盔甲。减少湿影响一点。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_DRAGONMUZZLE"
+    ],
+    "prereqs2": [
+      "ARCANA_DRAGONLEGS"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "wet_protection": [
+      {
+        "part": "torso",
+        "ignored": 15
+      }
+    ],
+    "encumbrance_always": [
+      [
+        "torso",
+        5
+      ]
+    ],
+    "armor": [
+      {
+        "parts": "torso",
+        "bash": 5,
+        "cut": 15,
+        "stab": 10,
+        "bullet": 5
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_INSTINCT",
+    "name": {
+      "str": "野兽本能"
+    },
+    "points": 8,
+    "mixed_effect": true,
+    "description": "你的思维方式已经被永久性地改变了，标志性在于不同于世界上的其他事物，你以掠夺和捕食作为你的驱动力。杀戮现在已经成为你的第二天性，但普通的野生动物似乎会注意到你这不自然的天性。而且你也发现你自己很难专注于某些制作任务，不过至少你的智慧还在。",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "ARCANA_DRAGONFIRE"
+    ],
+    "prereqs2": [
+      "ARCANA_PLATES"
+    ],
+    "category": [
+      "DRAGONBLOOD"
+    ],
+    "threshreq": [
+      "THRESH_DRAGONBLOOD"
+    ],
+    "social_modifiers": {
+      "intimidate": 20
+    },
+    "craft_skill_bonus": [
+      [
+        "computer",
+        -2
+      ],
+      [
+        "electronics",
+        -2
+      ],
+      [
+        "mechanics",
+        -2
+      ],
+      [
+        "tailor",
+        -2
+      ]
+    ],
+    "reading_speed_multiplier": 1.25,
+    "scent_intensity": 1200,
+    "scent_type": "sc_dragonblood",
+    "anger_relations": [
+      [
+        "DRAGON",
+        -100
+      ],
+      [
+        "FUNGUS",
+        25
+      ],
+      [
+        "MAMMAL",
+        15
+      ],
+      [
+        "BIRD",
+        15
+      ],
+      [
+        "REPTILE",
+        15
+      ]
+    ],
+    "flags": [
+      "PRED4"
+    ]
+  }
+]

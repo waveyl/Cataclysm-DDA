@@ -1,0 +1,244 @@
+[
+  {
+    "id": "SECRO_FLESH_SPAWN_SPLICER_main",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "*is shaking vigoriously.",
+      "*trembles"
+    ],
+    "responses": [
+      {
+        "text": "生物核心生产…",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core"
+      },
+      {
+        "text": "我需要你的拼接器。",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_device",
+        "condition": {
+          "not": {
+            "npc_has_effect": "secro_flesh_splicer_device_given"
+          }
+        }
+      },
+      {
+        "text": "精心服务。",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_job"
+      },
+      {
+        "text": "别管了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_SPLICER_job",
+    "type": "talk_topic",
+    "dynamic_line": "*它用吸管轻敲你：\n拼接器是专门用于DNA采集的，是生物核心生产的重要伙伴。生物核心是通过压缩从特定怪物的肉中提取的DNA而产生的。拼接器将提供一个生物有机装置来收集这些特殊类型的肉。",
+    "responses": [
+      {
+        "text": "好的。",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_SPLICER_device",
+    "type": "talk_topic",
+    "dynamic_line": "*颤抖着制造装置。过了片刻，它就会喷出你面前的物体。",
+    "responses": [
+      {
+        "text": "*把它捡起来*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_main",
+        "effect": [
+          {
+            "u_spawn_item": "secro_flesh_splicer"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_device_given",
+            "duration": 1000000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_SPLICER_core",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "secro_flesh_splicer_core_created",
+      "yes": "*消耗DNA，吸管就会形成一个核心。",
+      "no": "*需要5个相似类型的剪接DNA，才能形成更强大的物种——一个生物核心。"
+    },
+    "responses": [
+      {
+        "text": "[形成]*给它刀锋丧尸的剪接DNA*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_blade_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_blade_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_blade_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_blade_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "[形成]*给它肉瘤的剪接DNA*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_WALKINGPOTATO_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_WALKINGPOTATO_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_WALKINGPOTATO_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_WALKINGPOTATO_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "[形成]*给它肿口丧尸的剪接DNA*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_mouth_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_mouth_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_mouth_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_mouth_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "[形成]*给它卷须丧尸的剪接DNA*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_tendril_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_tendril_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_tendril_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_tendril_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "[形成]*给它泰坦丧尸的剪接DNA*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_titan_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_titan_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_titan_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_titan_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "[形成] *为其拼接DNA（整合体丧尸）*",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_core",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh_splicer_zombie_unifier_dna",
+            "count": 5
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_unifier_dna",
+            "count": 5
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_unifier_dna",
+            "count": 5
+          },
+          {
+            "u_spawn_item": "secro_flesh_splicer_zombie_unifier_ccore"
+          },
+          {
+            "npc_add_effect": "secro_flesh_splicer_core_created",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "以后再说。",
+        "topic": "SECRO_FLESH_SPAWN_SPLICER_main",
+        "effect": {
+          "npc_lose_effect": "secro_flesh_splicer_core_created"
+        }
+      }
+    ]
+  }
+]
