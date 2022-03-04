@@ -38,3 +38,4 @@ Yellow = Government and public services. Subways, fire, electric stations, sewer
 
 Blue = Service and entertainment. (low loot.) Laundromats, gyms, arcade, football field, radio. Movie theaters, amusement parks, spas, hair salons, etc. 
 Blue on black is hard to see, so it was used for places you don't often scan the map for. Ponds and related locations that are mostly natural water are also blue with `#` as their sign.
+
