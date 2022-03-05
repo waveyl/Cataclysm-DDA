@@ -1,8 +1,0 @@
-[
-  {
-    "id": "fire_lance",
-    "name": "火枪药",
-    "default": "lance_charge",
-    "type": "ammunition_type"
-  }
-]
