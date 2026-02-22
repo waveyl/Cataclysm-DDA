@@ -237,7 +237,6 @@ public class SplashScreen extends Activity {
                 totalFiles = countTotalAssets(assetManager, "data") +
                     countTotalAssets(assetManager, "gfx") +
                     countTotalAssets(assetManager, "lang") +
-                    countTotalAssets(assetManager, "lang") +
                     countTotalAssets(assetManager, "config");
                 showDialog(INSTALL_DIALOG_ID);
             } catch(Exception e) {
