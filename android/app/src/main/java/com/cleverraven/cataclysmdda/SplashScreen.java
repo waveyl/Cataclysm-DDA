@@ -236,7 +236,9 @@ public class SplashScreen extends Activity {
             try {
                 totalFiles = countTotalAssets(assetManager, "data") +
                     countTotalAssets(assetManager, "gfx") +
-                    countTotalAssets(assetManager, "lang");
+                    countTotalAssets(assetManager, "lang") +
+                    countTotalAssets(assetManager, "lang") +
+                    countTotalAssets(assetManager, "config");
                 showDialog(INSTALL_DIALOG_ID);
             } catch(Exception e) {
                 installationAlert.setMessage(e.getMessage());
@@ -312,7 +314,7 @@ public class SplashScreen extends Activity {
                 installationAlert.setMessage(e.getMessage());
                 return false;
             }
-
+            copyAssetFolder(assetManager, "config", externalFilesDir + "/config");
             // Remember which version the installed data is
             PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("installed", getVersionName()).commit();
 
